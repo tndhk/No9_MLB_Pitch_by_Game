@@ -1,0 +1,385 @@
+2025-03-21 12:40:10,695 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:40:10,695 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:40:10,695 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:40:10,699 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:40:10,699 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:40:10,699 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:40:10,699 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:40:10,700 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:40:10,700 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:40:10,700 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:40:19,335 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:40:19,337 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:40:19,338 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:40:19,340 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:40:19,340 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:40:19,341 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:40:19,341 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:40:19,341 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:40:19,341 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:40:19,341 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:40:19,344 - src.presentation.streamlit_app - INFO - 投手名「Shota Imanaga」で検索を実行
+2025-03-21 12:40:19,345 - root - ERROR - アプリケーション実行中にエラーが発生しました: Method `spinner()` does not exist for `st.sidebar`. Did you mean `st.spinner()`?
+Traceback (most recent call last):
+  File "/app/app.py", line 55, in main
+    app.run()
+  File "/app/src/presentation/streamlit_app.py", line 49, in run
+    pitcher_id, game_date = self.render_search_interface()
+  File "/app/src/presentation/streamlit_app.py", line 100, in render_search_interface
+    with st.sidebar.spinner("投手を検索中..."):
+  File "/usr/local/lib/python3.10/site-packages/streamlit/delta_generator.py", line 351, in wrapper
+    raise StreamlitAPIException(message)
+streamlit.errors.StreamlitAPIException: Method `spinner()` does not exist for `st.sidebar`. Did you mean `st.spinner()`?
+2025-03-21 12:53:53,259 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:53:53,259 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:53:53,259 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:53:53,261 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:53:53,261 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:53:53,261 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:53:53,261 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:53:53,261 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:53:53,262 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:53:53,262 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:00,837 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:54:00,838 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:54:00,839 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:54:00,841 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:54:00,842 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:54:00,842 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:54:00,843 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:54:00,843 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:54:00,844 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:54:00,844 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:00,847 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-21 12:54:00,849 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-21 12:54:00,849 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-21 12:54:00,850 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:54:00,856 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 12:54:03,739 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:54:03,741 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:54:03,742 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:54:03,745 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:54:03,745 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:54:03,746 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:54:03,747 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:54:03,748 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:54:03,748 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:54:03,749 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:46,248 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:54:46,250 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:54:46,251 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:54:46,253 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:54:46,254 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:54:46,254 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:54:46,255 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:54:46,256 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:54:46,256 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:54:46,256 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:46,260 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-21 12:54:46,261 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-21 12:54:46,261 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-21 12:54:46,263 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:54:46,269 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 12:54:51,682 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:54:51,684 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:54:51,684 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:54:51,687 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:54:51,688 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:54:51,688 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:54:51,688 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:54:51,689 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:54:51,690 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:54:51,690 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:51,693 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-21 12:54:51,694 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-21 12:54:51,697 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-21 12:54:51,697 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:54:51,704 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 12:54:59,038 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:54:59,039 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:54:59,040 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:54:59,043 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:54:59,043 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:54:59,043 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:54:59,044 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:54:59,045 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:54:59,045 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:54:59,045 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:54:59,048 - src.presentation.streamlit_app - INFO - 投手名「Shota Imanaga」で検索を実行
+2025-03-21 12:54:59,049 - src.application.usecases - INFO - 投手名 'Shota Imanaga' で検索します
+2025-03-21 12:54:59,050 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shota Imanaga' で検索しています
+2025-03-21 12:54:59,051 - src.infrastructure.baseball_savant_client - WARNING - 警告: 'Shota Imanaga'に一致する投手が見つかりませんでした
+2025-03-21 12:55:02,934 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:55:02,935 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:55:02,936 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:55:02,939 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:55:02,940 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:55:02,940 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:55:02,942 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:55:02,943 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:55:02,943 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:55:02,944 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:55:02,947 - src.presentation.streamlit_app - INFO - 投手名「Shota Imanaga」で検索を実行
+2025-03-21 12:55:02,948 - src.application.usecases - INFO - 投手名 'Shota Imanaga' で検索します
+2025-03-21 12:55:02,948 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shota Imanaga' で検索しています
+2025-03-21 12:55:02,949 - src.infrastructure.baseball_savant_client - WARNING - 警告: 'Shota Imanaga'に一致する投手が見つかりませんでした
+2025-03-21 12:55:13,795 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:55:13,797 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:55:13,798 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:55:13,800 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:55:13,800 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:55:13,801 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:55:13,801 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:55:13,803 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:55:13,803 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:55:13,804 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:55:13,807 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-21 12:55:13,808 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-21 12:55:13,808 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-21 12:55:13,809 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:55:13,815 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 12:55:16,552 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:55:16,553 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:55:16,554 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:55:16,557 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:55:16,558 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:55:16,559 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:55:16,559 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:55:16,560 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:55:16,561 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:55:16,561 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:58:41,784 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:58:41,786 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:58:41,786 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:58:41,789 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:58:41,789 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:58:41,790 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:58:41,790 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:58:41,791 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:58:41,791 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:58:41,792 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:58:41,798 - src.presentation.streamlit_app - INFO - 投手名「Shohei」で検索を実行
+2025-03-21 12:58:41,799 - src.application.usecases - INFO - 投手名 'Shohei' で検索します
+2025-03-21 12:58:41,799 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei' で検索しています
+2025-03-21 12:58:41,800 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:58:41,803 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 12:58:43,037 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:58:43,038 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:58:43,039 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:58:43,041 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:58:43,042 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:58:43,042 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:58:43,043 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:58:43,043 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:58:43,044 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:58:43,044 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:58:46,416 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:58:46,417 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:58:46,418 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:58:46,420 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:58:46,421 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:58:46,421 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:58:46,422 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:58:46,422 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:58:46,423 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:58:46,423 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:58:46,426 - src.presentation.streamlit_app - INFO - 投手名「Dar」で検索を実行
+2025-03-21 12:58:46,428 - src.application.usecases - INFO - 投手名 'Dar' で検索します
+2025-03-21 12:58:46,429 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Dar' で検索しています
+2025-03-21 12:58:46,430 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:58:46,434 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 12:58:47,837 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:58:47,838 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:58:47,839 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:58:47,843 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:58:47,843 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:58:47,844 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:58:47,844 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:58:47,845 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:58:47,846 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:58:47,846 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:59:07,219 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 12:59:07,220 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 12:59:07,221 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 12:59:07,224 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 12:59:07,224 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 12:59:07,224 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 12:59:07,225 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 12:59:07,226 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 12:59:07,226 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 12:59:07,227 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 12:59:07,230 - src.presentation.streamlit_app - INFO - 投手名「Dar」で検索を実行
+2025-03-21 12:59:07,230 - src.application.usecases - INFO - 投手名 'Dar' で検索します
+2025-03-21 12:59:07,231 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Dar' で検索しています
+2025-03-21 12:59:07,233 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 12:59:07,239 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 13:04:31,788 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:31,790 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:31,791 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:31,795 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:31,795 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:31,796 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:31,796 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:31,797 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:31,798 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:31,799 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:04:33,068 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:33,070 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:33,070 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:33,073 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:33,073 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:33,074 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:33,075 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:33,076 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:33,077 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:33,077 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:04:33,080 - src.presentation.streamlit_app - INFO - 投手名「Dar」で検索を実行
+2025-03-21 13:04:33,081 - src.application.usecases - INFO - 投手名 'Dar' で検索します
+2025-03-21 13:04:33,083 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Dar' で検索しています
+2025-03-21 13:04:33,085 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:04:33,090 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 13:04:34,321 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:34,323 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:34,324 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:34,327 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:34,327 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:34,328 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:34,328 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:34,329 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:34,330 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:34,331 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:04:35,905 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:35,906 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:35,906 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:35,908 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:35,908 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:35,909 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:35,909 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:35,909 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:35,910 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:35,910 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:04:40,496 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:40,498 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:40,499 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:40,502 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:40,502 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:40,503 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:40,503 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:40,504 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:40,504 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:40,505 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:04:40,508 - src.presentation.streamlit_app - INFO - 投手名「dar」で検索を実行
+2025-03-21 13:04:40,509 - src.application.usecases - INFO - 投手名 'dar' で検索します
+2025-03-21 13:04:40,509 - src.infrastructure.baseball_savant_client - INFO - 投手名 'dar' で検索しています
+2025-03-21 13:04:40,511 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:04:40,519 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 13:04:41,973 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:04:41,975 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:04:41,975 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:04:41,978 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:04:41,979 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:04:41,979 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:04:41,979 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:04:41,980 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:04:41,981 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:04:41,981 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:28,874 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:28,875 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:28,875 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:28,876 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:28,876 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:28,877 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:28,877 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:28,877 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:28,877 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:28,877 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:32,023 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:32,025 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:32,025 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:32,027 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:32,027 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:32,028 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:32,028 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:32,029 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:32,029 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:32,029 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:32,031 - src.presentation.streamlit_app - INFO - 投手名「dar」で検索を実行
+2025-03-21 13:05:32,033 - src.application.usecases - INFO - 投手名 'dar' で検索します
+2025-03-21 13:05:32,033 - src.infrastructure.baseball_savant_client - INFO - 投手名 'dar' で検索しています
+2025-03-21 13:05:32,034 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:05:32,039 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 13:05:34,804 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:34,806 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:34,806 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:34,809 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:34,810 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:34,811 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:34,812 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:34,813 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:34,813 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:34,814 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:37,906 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:37,907 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:37,908 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:37,910 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:37,910 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:37,910 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:37,911 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:37,911 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:37,912 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:37,912 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:37,915 - src.presentation.streamlit_app - INFO - 投手名「dar」で検索を実行
+2025-03-21 13:05:37,916 - src.application.usecases - INFO - 投手名 'dar' で検索します
+2025-03-21 13:05:37,916 - src.infrastructure.baseball_savant_client - INFO - 投手名 'dar' で検索しています
+2025-03-21 13:05:37,917 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:05:37,922 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Yu Darvish (ID: 506433)
+2025-03-21 13:05:39,070 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:39,071 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:39,072 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:39,074 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:39,074 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:39,075 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:39,075 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:39,076 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:39,076 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:39,077 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:43,168 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:43,170 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:43,171 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:43,174 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:43,174 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:43,175 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:43,176 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:43,177 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:43,178 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:43,178 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:43,181 - src.presentation.streamlit_app - INFO - 投手名「shoh」で検索を実行
+2025-03-21 13:05:43,182 - src.application.usecases - INFO - 投手名 'shoh' で検索します
+2025-03-21 13:05:43,183 - src.infrastructure.baseball_savant_client - INFO - 投手名 'shoh' で検索しています
+2025-03-21 13:05:43,185 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:05:43,193 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-21 13:05:44,590 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:44,591 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:44,592 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:44,594 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:44,595 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:44,595 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:44,596 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:44,596 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:44,597 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:44,597 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:46,889 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-21 13:05:46,891 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-21 13:05:46,891 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-21 13:05:46,894 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-21 13:05:46,894 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-21 13:05:46,895 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-21 13:05:46,896 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-21 13:05:46,897 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-21 13:05:46,898 - src.service_factory - INFO - StreamlitAppを作成しました
+2025-03-21 13:05:46,898 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-21 13:05:46,901 - src.presentation.streamlit_app - INFO - 投手名「shoh」で検索を実行
+2025-03-21 13:05:46,902 - src.application.usecases - INFO - 投手名 'shoh' で検索します
+2025-03-21 13:05:46,903 - src.infrastructure.baseball_savant_client - INFO - 投手名 'shoh' で検索しています
+2025-03-21 13:05:46,904 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-21 13:05:46,912 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
