@@ -1,0 +1,32 @@
+# MLB投手分析ツール設定ファイル
+
+# アプリケーション全般
+app:
+  name: "MLB投手分析ツール"
+  version: "1.0.0"
+  debug: false
+  
+# ログ設定
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  dir: "logs"
+
+# データ保存設定
+storage:
+  cache_dir: "./data"
+  db_path: "./data/db.sqlite"
+  cache_expiry_days: 7
+
+# API設定
+api:
+  baseball_savant:
+    base_url: "https://baseballsavant.mlb.com"
+    search_url: "https://baseballsavant.mlb.com/api/v1/search"
+    stats_url: "https://baseballsavant.mlb.com/statcast_search/csv"
+    player_url: "https://baseballsavant.mlb.com/savant-player"
+    rate_limit: 2.0  # リクエスト間隔（秒）
+    max_retries: 3   # エラー時の最大リトライ回数
+    timeout: 30      # リクエストタイムアウト（秒）
+    use_proxy: false
+    user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"

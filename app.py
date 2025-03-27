@@ -4,6 +4,7 @@ Streamlitアプリケーションのエントリーポイント
 import os
 import sys
 import logging
+import argparse
 from typing import Dict, Any
 
 # パスの追加（パッケージとして実行していない場合でも動作するように）
@@ -12,43 +13,51 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from src.service_factory import ServiceFactory
 
 
-def get_config() -> Dict[str, Any]:
-    """設定を取得"""
-    # 環境変数から設定を読み込む（または固定値を使用）
-    config = {
-        'log_level': os.environ.get('LOG_LEVEL', 'INFO'),
-        'cache_dir': os.environ.get('CACHE_DIR', './data'),
-        'db_path': os.environ.get('DB_PATH', './data/db.sqlite'),
-        'api_rate_limit': float(os.environ.get('API_RATE_LIMIT', '2.0')),
-        'log_dir': os.environ.get('LOG_DIR', 'logs')
-    }
+def parse_args() -> Dict[str, Any]:
+    """コマンドライン引数を解析"""
+    parser = argparse.ArgumentParser(description='MLB投手1試合分析ツール')
     
-    return config
+    parser.add_argument('--config', 
+                        default='./config.yml',
+                        help='設定ファイルのパス')
+    
+    # サブコマンドライン引数がある場合は、それだけをパースする
+    if len(sys.argv) > 1 and sys.argv[1] == '--':
+        args = parser.parse_args(sys.argv[2:])
+    else:
+        args = parser.parse_args()
+    
+    # デバッグログ
+    logging.basicConfig(level=logging.INFO)
+    logging.info(f"設定ファイルパス: {args.config}")
+    
+    return args
 
 
 def main() -> None:
     """Streamlitアプリケーションのメイン関数"""
-    config = get_config()
+    # コマンドライン引数の解析
+    args = parse_args()
+    
+    # ファイルの存在確認
+    config_path = args.config
+    if not os.path.exists(config_path):
+        logging.error(f"設定ファイルが見つかりません: {config_path}")
+        print(f"エラー: 設定ファイルが見つかりません: {config_path}")
+        print(f"現在の作業ディレクトリ: {os.getcwd()}")
+        print(f"ディレクトリ内容: {os.listdir('.')}")
+        if os.path.dirname(config_path):
+            parent_dir = os.path.dirname(config_path)
+            if os.path.exists(parent_dir):
+                print(f"{parent_dir}の内容: {os.listdir(parent_dir)}")
+    else:
+        logging.info(f"設定ファイルが見つかりました: {config_path}")
     
     try:
-        # ログディレクトリの作成
-        os.makedirs(config['log_dir'], exist_ok=True)
-        
-        # ロギングの初期化
-        logging.basicConfig(
-            level=getattr(logging, config['log_level']),
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.StreamHandler(),
-                logging.FileHandler(os.path.join(config['log_dir'], 'streamlit_app.log'))
-            ]
-        )
-        
+        # サービスファクトリの初期化（設定ファイルのパスを指定）
+        factory = ServiceFactory(args.config)
         logger = logging.getLogger(__name__)
         logger.info("Streamlitアプリケーションを起動します")
-        
-        # サービスファクトリの初期化
-        factory = ServiceFactory(config)
         
         # Streamlitアプリの作成と実行
         app = factory.create_streamlit_app()

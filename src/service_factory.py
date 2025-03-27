@@ -3,7 +3,7 @@
 """
 import logging
 import os
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 from src.domain.pitch_analyzer import PitchAnalyzer
 from src.infrastructure.baseball_savant_client import BaseballSavantClient
@@ -11,6 +11,7 @@ from src.infrastructure.data_repository import DataRepository
 from src.application.usecases import PitcherGameAnalysisUseCase
 from src.presentation.data_visualizer import DataVisualizer
 from src.presentation.streamlit_app import StreamlitApp
+from src.config import get_config
 
 
 class ServiceFactory:
@@ -19,14 +20,17 @@ class ServiceFactory:
     アプリケーション全体の依存性を管理し、必要なオブジェクトを提供する
     """
     
-    def __init__(self, config: Dict[str, Any] = None):
+    def __init__(self, config_path: Optional[str] = None):
         """
         Parameters:
         -----------
-        config : Dict[str, Any], optional
-            アプリケーション設定
+        config_path : Optional[str]
+            設定ファイルのパス。Noneの場合はデフォルトのパスを使用
         """
-        self.config = config or {}
+        # 設定マネージャーの初期化
+        self.config = get_config(config_path)
+        
+        # ロギングの設定
         self._setup_logging()
         self.logger = logging.getLogger(__name__)
         self.logger.info("サービスファクトリを初期化しています")
@@ -36,11 +40,12 @@ class ServiceFactory:
     
     def _setup_logging(self) -> None:
         """ロギングの設定"""
-        log_level = self.config.get('log_level', 'INFO')
-        log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        log_level = self.config.get('logging', 'level', default='INFO')
+        log_format = self.config.get('logging', 'format', 
+                                     default='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         
         # ログディレクトリの作成
-        log_dir = self.config.get('log_dir', 'logs')
+        log_dir = self.config.get('logging', 'dir', default='logs')
         os.makedirs(log_dir, exist_ok=True)
         
         # ロガーの設定
@@ -56,7 +61,7 @@ class ServiceFactory:
     def create_baseball_savant_client(self) -> BaseballSavantClient:
         """BaseballSavantClientのインスタンスを作成/取得"""
         if 'baseball_savant_client' not in self._instances:
-            rate_limit = self.config.get('api_rate_limit', 2.0)
+            rate_limit = self.config.get('api', 'baseball_savant', 'rate_limit', default=2.0)
             self._instances['baseball_savant_client'] = BaseballSavantClient(rate_limit_interval=rate_limit)
             self.logger.info("BaseballSavantClientを作成しました")
         
@@ -65,13 +70,17 @@ class ServiceFactory:
     def create_data_repository(self) -> DataRepository:
         """DataRepositoryのインスタンスを作成/取得"""
         if 'data_repository' not in self._instances:
-            cache_dir = self.config.get('cache_dir', './data')
-            db_path = self.config.get('db_path', './data/db.sqlite')
+            cache_dir = self.config.get('storage', 'cache_dir', default='./data')
+            db_path = self.config.get('storage', 'db_path', default='./data/db.sqlite')
+            cache_expiry_days = self.config.get('storage', 'cache_expiry_days', default=7)
             
             # キャッシュディレクトリの作成
             os.makedirs(cache_dir, exist_ok=True)
             
-            self._instances['data_repository'] = DataRepository(cache_dir=cache_dir, db_path=db_path)
+            self._instances['data_repository'] = DataRepository(
+                cache_dir=cache_dir, 
+                db_path=db_path
+            )
             self.logger.info(f"DataRepositoryを作成しました (cache_dir: {cache_dir}, db_path: {db_path})")
         
         return self._instances['data_repository']

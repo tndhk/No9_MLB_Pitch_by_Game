@@ -4,7 +4,7 @@ BaseballSavantClientクラスのテスト
 import pytest
 import pandas as pd
 import requests
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock, patch, ANY
 
 from src.infrastructure.baseball_savant_client import BaseballSavantClient
 from src.domain.entities import Pitcher
@@ -25,8 +25,48 @@ SL,2023-04-01,88.3,12345,543037,out,swinging_strike,2600
     response.content = csv_content.encode('utf-8')
     response.raise_for_status = MagicMock()
     session.get.return_value = response
+    session.request.return_value = response
     
     return session
+
+
+@pytest.fixture
+def mock_search_response():
+    """検索結果のモック"""
+    response = MagicMock()
+    
+    # HTML検索結果の例
+    html_content = """
+    <div class="search-results">
+        <a href="/savant-player/playerid=543037" class="player-name-link">Gerrit Cole</a>
+        <a href="/savant-player/playerid=660271" class="player-name-link">Shohei Ohtani</a>
+    </div>
+    """
+    
+    response.text = html_content
+    response.raise_for_status = MagicMock()
+    
+    return response
+
+
+@pytest.fixture
+def mock_pitcher_details_response():
+    """投手詳細情報のモック"""
+    response = MagicMock()
+    
+    # HTML検索結果の例
+    html_content = """
+    <div class="player-header">
+        <h1 class="player-name">Gerrit Cole</h1>
+        <span class="player-team">New York Yankees</span>
+        <span class="player-throws">Throws: R</span>
+    </div>
+    """
+    
+    response.text = html_content
+    response.raise_for_status = MagicMock()
+    
+    return response
 
 
 class TestBaseballSavantClient:
@@ -41,6 +81,7 @@ class TestBaseballSavantClient:
         client = BaseballSavantClient()
         
         # セッションヘッダーの設定を検証
+        assert mock_session.headers.update.called
         assert 'User-Agent' in mock_session.headers.update.call_args[0][0]
     
     @patch('time.sleep')
@@ -72,7 +113,7 @@ class TestBaseballSavantClient:
         df = client.get_pitch_data('543037', '2023-04-01')
         
         # リクエストが行われたことを検証
-        mock_session.get.assert_called_once()
+        mock_session.request.assert_called_once()
         
         # DataFrameが返されたことを検証
         assert isinstance(df, pd.DataFrame)
@@ -80,17 +121,46 @@ class TestBaseballSavantClient:
         assert 'pitch_type' in df.columns
         assert 'release_speed' in df.columns
     
-    def test_search_pitcher(self):
+    @patch('src.infrastructure.baseball_savant_client.BaseballSavantClient._make_request')
+    def test_search_pitcher(self, mock_make_request, mock_search_response):
         """search_pitcherメソッドのテスト"""
         client = BaseballSavantClient()
         
+        # 検索レスポンスをモック
+        mock_make_request.return_value = mock_search_response
+        
         # 検索実行
-        results = client.search_pitcher('Ohtani')
+        results = client.search_pitcher('Cole')
+        
+        # _make_requestが呼ばれたことを検証
+        mock_make_request.assert_called_once()
         
         # 結果の検証
         assert isinstance(results, list)
         assert all(isinstance(p, Pitcher) for p in results)
-        assert any(p.name == 'Shohei Ohtani' for p in results)
+        # "Gerrit Cole"が検索結果に含まれることを確認
+        assert any(p.id == '543037' for p in results)
+    
+    @patch('src.infrastructure.baseball_savant_client.BaseballSavantClient._make_request')
+    def test_get_pitcher_details(self, mock_make_request, mock_pitcher_details_response):
+        """get_pitcher_detailsメソッドのテスト"""
+        client = BaseballSavantClient()
+        
+        # 詳細情報レスポンスをモック
+        mock_make_request.return_value = mock_pitcher_details_response
+        
+        # 詳細情報の取得
+        pitcher = client.get_pitcher_details('543037')
+        
+        # _make_requestが呼ばれたことを検証
+        mock_make_request.assert_called_once()
+        
+        # 結果の検証
+        assert isinstance(pitcher, Pitcher)
+        assert pitcher.id == '543037'
+        assert pitcher.name == 'Gerrit Cole'
+        assert pitcher.team == 'New York Yankees'
+        assert pitcher.throws == 'R'
     
     @patch('src.infrastructure.baseball_savant_client.BaseballSavantClient.get_pitch_data')
     def test_get_pitcher_games(self, mock_get_pitch_data):
@@ -115,3 +185,30 @@ class TestBaseballSavantClient:
         assert len(games) == 2  # ユニークな試合日は2日分
         assert games[0].date == '2023-04-06'  # 日付降順
         assert games[1].date == '2023-04-01'
+    
+    @patch('requests.Session.request')
+    @patch('time.sleep')
+    def test_make_request_with_retry(self, mock_sleep, mock_request):
+        """_make_requestメソッドのリトライ機能テスト"""
+        # 最初の2回は例外を発生させ、3回目は成功させる
+        mock_response = MagicMock()
+        mock_request.side_effect = [
+            requests.exceptions.ConnectionError("Connection error"),
+            requests.exceptions.Timeout("Timeout error"),
+            mock_response
+        ]
+        
+        client = BaseballSavantClient()
+        client.max_retries = 3  # リトライ回数を設定
+        
+        # リクエスト実行
+        response = client._make_request('GET', 'https://example.com')
+        
+        # リクエストが3回呼ばれたことを検証
+        assert mock_request.call_count == 3
+        
+        # sleepが2回呼ばれたことを検証（リトライごとに1回）
+        assert mock_sleep.call_count == 2
+        
+        # 正常なレスポンスが返されたことを検証
+        assert response == mock_response
