@@ -1,17 +1,3 @@
-"""
-データの可視化を担当するクラス
-"""
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
-import numpy as np
-from typing import Dict, Any, List, Optional, Tuple
-import io
-import base64
-import logging
-from matplotlib.figure import Figure
-
-
 class DataVisualizer:
     """データの可視化を担当するクラス"""
     

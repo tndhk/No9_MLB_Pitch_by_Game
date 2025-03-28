@@ -1,12 +1,3 @@
-"""
-投球データの分析ロジックを提供する
-"""
-from typing import Dict, Any, List, Tuple, Optional
-import pandas as pd
-import numpy as np
-from collections import defaultdict
-
-
 class PitchAnalyzer:
     """投球データの分析を担当するクラス"""
 
@@ -23,6 +14,18 @@ class PitchAnalyzer:
         --------
         Dict[str, Any]
             イニング別分析結果を含む辞書
+            {
+                'innings': [1, 2, 3, ...],
+                'velocity': {
+                    '1': {'mean': 95.2, 'max': 97.1, 'min': 93.4, 'std': 1.2},
+                    '2': {...},
+                    ...
+                },
+                'pitch_count': {'1': 15, '2': 12, ...},
+                'strike_percentage': {'1': 63.4, '2': 58.3, ...},
+                'whiff_percentage': {'1': 25.0, '2': 20.0, ...},
+                'pitch_type_distribution': {'1': {'FF': 10, 'SL': 5, ...}, ...}
+            }
         """
         if data.empty or 'inning' not in data.columns:
             return {'error': 'データが無効または必要なカラムがありません'}
@@ -87,6 +90,21 @@ class PitchAnalyzer:
         --------
         Dict[str, Any]
             球種別分析結果を含む辞書
+            {
+                'pitch_types': ['FF', 'SL', 'CH', ...],
+                'usage': {
+                    'FF': {'count': 45, 'percentage': 56.3},
+                    'SL': {...},
+                    ...
+                },
+                'velocity': {...},
+                'effectiveness': {
+                    'FF': {'strike_percentage': 65.0, 'swinging_strike_percentage': 12.0, ...},
+                    ...
+                },
+                'location': {...},
+                'movement': {...}
+            }
         """
         if data.empty or 'pitch_type' not in data.columns:
             return {'error': 'データが無効または必要なカラムがありません'}
@@ -181,6 +199,7 @@ class PitchAnalyzer:
         --------
         pd.DataFrame
             被打球データを含むデータフレーム
+            カラム: [pitch_type, launch_speed, launch_angle, hit_distance_sc, hit_type, hit_result, ...]
         """
         if data.empty:
             return pd.DataFrame()
@@ -207,9 +226,9 @@ class PitchAnalyzer:
         else:
             # 簡易的な打球分類（launch_angleに基づく）
             batted_balls['hit_type'] = batted_balls['launch_angle'].apply(
-                lambda angle: 'ground_ball' if angle < 10 else 
-                             ('line_drive' if angle < 25 else 
-                             ('fly_ball' if angle < 50 else 'pop_up'))
+                lambda angle: 'ground_ball' if pd.notna(angle) and angle < 10 else 
+                             ('line_drive' if pd.notna(angle) and angle < 25 else 
+                             ('fly_ball' if pd.notna(angle) and angle < 50 else 'pop_up'))
             )
         
         # 打球結果を追加
@@ -233,6 +252,14 @@ class PitchAnalyzer:
         --------
         Dict[str, Any]
             パフォーマンスサマリーを含む辞書
+            {
+                'total_pitches': 80,
+                'pitch_type_counts': {'FF': 45, 'SL': 25, ...},
+                'velocity': {'average': 94.2, 'max': 97.1, 'min': 92.3, 'std': 1.4},
+                'outcomes': {'called_strikes': 20, 'swinging_strikes': 15, ...},
+                'innings_pitched': 6,
+                'batters_faced': 24
+            }
         """
         if data.empty:
             return {'error': 'データがありません'}

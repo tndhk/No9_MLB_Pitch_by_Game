@@ -1,11 +1,3 @@
-"""
-分析結果を格納するクラス
-"""
-from dataclasses import dataclass
-from typing import Dict, Any, List, Optional
-import pandas as pd
-
-
 @dataclass
 class AnalysisResult:
     """分析結果を格納するクラス"""

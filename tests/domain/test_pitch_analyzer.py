@@ -1,59 +1,48 @@
-"""
-PitchAnalyzerクラスのテスト
-"""
-import pytest
-import pandas as pd
-import numpy as np
-from src.domain.pitch_analyzer import PitchAnalyzer
-
-
-@pytest.fixture
-def sample_pitch_data():
-    """テスト用の投球データを生成"""
-    # テスト用のダミーデータを作成
-    data = {
-        'pitch_type': ['FF', 'SL', 'CH', 'FF', 'FF', 'SL', 'FF', 'CH'],
-        'release_speed': [95.2, 88.4, 85.1, 94.8, 95.5, 87.9, 96.1, 84.7],
-        'inning': [1, 1, 1, 2, 2, 3, 3, 3],
-        'description': ['swinging_strike', 'ball', 'called_strike', 'foul', 'swinging_strike', 'hit_into_play', 'called_strike', 'swinging_strike'],
-        'type': ['S', 'B', 'S', 'S', 'S', 'X', 'S', 'S'],
-        'plate_x': [0.12, -0.54, 0.23, 0.05, -0.32, 0.78, 0.21, -0.15],
-        'plate_z': [2.31, 1.87, 1.65, 2.45, 2.12, 1.98, 2.35, 1.72],
-        'pfx_x': [3.2, -4.5, 8.7, 3.5, 3.1, -4.8, 3.3, 9.1],
-        'pfx_z': [9.8, 2.3, 5.6, 10.1, 9.5, 2.1, 9.7, 6.2]
-    }
-    
-    # DataFrameの作成
-    df = pd.DataFrame(data)
-    
-    return df
-
-
-@pytest.fixture
-def sample_batted_ball_data():
-    """テスト用の打球データを生成"""
-    # テスト用のダミーデータを作成
-    data = {
-        'pitch_type': ['FF', 'SL', 'FF'],
-        'description': ['hit_into_play', 'hit_into_play', 'hit_into_play'],
-        'launch_speed': [95.2, 88.4, 102.7],
-        'launch_angle': [25.3, 12.8, 32.5],
-        'hit_distance_sc': [350, 220, 410],
-        'hit_location': [7, 4, 9],
-        'hc_x': [120, 80, 150],
-        'hc_y': [180, 120, 210],
-        'bb_type': ['fly_ball', 'ground_ball', 'fly_ball'],
-        'events': ['single', 'out', 'home_run']
-    }
-    
-    # DataFrameの作成
-    df = pd.DataFrame(data)
-    
-    return df
-
-
 class TestPitchAnalyzer:
     """PitchAnalyzerクラスのテスト"""
+    
+    @pytest.fixture
+    def sample_pitch_data(self):
+        """テスト用の投球データを生成"""
+        # テスト用のダミーデータを作成
+        data = {
+            'pitch_type': ['FF', 'SL', 'CH', 'FF', 'FF', 'SL', 'FF', 'CH'],
+            'release_speed': [95.2, 88.4, 85.1, 94.8, 95.5, 87.9, 96.1, 84.7],
+            'inning': [1, 1, 1, 2, 2, 3, 3, 3],
+            'description': ['swinging_strike', 'ball', 'called_strike', 'foul', 'swinging_strike', 'hit_into_play', 'called_strike', 'swinging_strike'],
+            'type': ['S', 'B', 'S', 'S', 'S', 'X', 'S', 'S'],
+            'plate_x': [0.12, -0.54, 0.23, 0.05, -0.32, 0.78, 0.21, -0.15],
+            'plate_z': [2.31, 1.87, 1.65, 2.45, 2.12, 1.98, 2.35, 1.72],
+            'pfx_x': [3.2, -4.5, 8.7, 3.5, 3.1, -4.8, 3.3, 9.1],
+            'pfx_z': [9.8, 2.3, 5.6, 10.1, 9.5, 2.1, 9.7, 6.2]
+        }
+        
+        # DataFrameの作成
+        df = pd.DataFrame(data)
+        
+        return df
+    
+    @pytest.fixture
+    def sample_batted_ball_data(self):
+        """テスト用の打球データを生成"""
+        # テスト用のダミーデータを作成
+        data = {
+            'pitch_type': ['FF', 'SL', 'FF'],
+            'description': ['hit_into_play', 'hit_into_play', 'hit_into_play'],
+            'launch_speed': [95.2, 88.4, 102.7],
+            'launch_angle': [25.3, 12.8, 32.5],
+            'hit_distance_sc': [350, 220, 410],
+            'hit_location': [7, 4, 9],
+            'hc_x': [120, 80, 150],
+            'hc_y': [180, 120, 210],
+            'bb_type': ['fly_ball', 'ground_ball', 'fly_ball'],
+            'events': ['single', 'out', 'home_run']
+        }
+        
+        # DataFrameの作成
+        df = pd.DataFrame(data)
+        
+        return df
     
     def test_analyze_by_inning(self, sample_pitch_data):
         """イニング別分析のテスト"""

@@ -9,13 +9,10 @@ services:
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
-      - ./config.yml:/app/config.yml
     environment:
-      - MLB_APP_DEBUG=false
-      - MLB_LOG_LEVEL=INFO
-      - MLB_CACHE_DIR=/app/data
-      - MLB_DB_PATH=/app/data/db.sqlite
-      - MLB_LOG_DIR=/app/logs
-      - MLB_API_RATE_LIMIT=2.0
-      - MLB_API_MAX_RETRIES=3
+      - CACHE_DIR=/app/data
+      - DB_PATH=/app/data/db.sqlite
+      - LOG_DIR=/app/logs
+      - LOG_LEVEL=INFO
+      - API_RATE_LIMIT=2.0
     restart: unless-stopped

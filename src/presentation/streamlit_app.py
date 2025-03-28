@@ -1,19 +1,3 @@
-"""
-Streamlitアプリケーションのメインクラス
-"""
-import streamlit as st
-import pandas as pd
-import logging
-from typing import Optional, Tuple, List, Dict, Any
-import matplotlib.pyplot as plt
-import time
-
-from src.application.usecases import PitcherGameAnalysisUseCase
-from src.presentation.data_visualizer import DataVisualizer
-from src.application.analysis_result import AnalysisResult
-from src.domain.entities import Pitcher, Game
-
-
 class StreamlitApp:
     """Streamlitアプリケーションのメインクラス"""
     
@@ -69,23 +53,22 @@ class StreamlitApp:
         st.sidebar.header("投手・試合選択")
         
         # セッション状態の初期化
-        # 修正後 - 新しいセッション変数を追加
         if 'pitcher_search_history' not in st.session_state:
             st.session_state.pitcher_search_history = []
         if 'selected_pitcher' not in st.session_state:
             st.session_state.selected_pitcher = None
-        if 'selected_pitcher_id' not in st.session_state:  # 追加
-            st.session_state.selected_pitcher_id = None    # 追加
-        if 'selected_season' not in st.session_state:      # 追加
-            st.session_state.selected_season = None        # 追加
+        if 'selected_pitcher_id' not in st.session_state:
+            st.session_state.selected_pitcher_id = None
+        if 'selected_season' not in st.session_state:
+            st.session_state.selected_season = None
         if 'pitcher_games' not in st.session_state:
             st.session_state.pitcher_games = []
         if 'selected_game' not in st.session_state:
             st.session_state.selected_game = None
-        if 'need_load_games' not in st.session_state:      # 追加：試合データ読み込みフラグ
-            st.session_state.need_load_games = False       # 追加
-        if 'search_results' not in st.session_state:       # 追加：検索結果の保存
-            st.session_state.search_results = []           # 追加
+        if 'need_load_games' not in st.session_state:
+            st.session_state.need_load_games = False
+        if 'search_results' not in st.session_state:
+            st.session_state.search_results = []
                 
         # 投手検索フォーム
         with st.sidebar.form("pitcher_search_form"):
@@ -96,7 +79,6 @@ class StreamlitApp:
         # 検索履歴の表示（最大5件）
         if st.session_state.pitcher_search_history:
             st.sidebar.markdown("### 検索履歴")
-            # 修正後 - 履歴ボタンにもユニークキーとフラグ設定
             for pitcher in st.session_state.pitcher_search_history[-5:]:
                 history_key = f"history_{pitcher.id}_{int(time.time())}"
                 if st.sidebar.button(f"{pitcher.name}", key=history_key):
@@ -122,9 +104,9 @@ class StreamlitApp:
                     search_status.error(f"「{pitcher_name}」に一致する投手が見つかりませんでした")
                 else:
                     # 検索結果の表示
+# 検索結果の表示
                     search_status.success(f"{len(pitchers)}人の投手が見つかりました")
                     
-                    # 修正後 - ユニークなキーとデータ読み込みのフラグ設定
                     # 検索結果をセッション状態に保存
                     st.session_state.search_results = pitchers
 
@@ -135,40 +117,39 @@ class StreamlitApp:
                         button_key = f"search_{pitcher.id}_{int(time.time())}"
                         if st.sidebar.button(f"{pitcher.name}", key=button_key):
                             st.session_state.selected_pitcher = pitcher
-                            st.session_state.selected_pitcher_id = pitcher.id  # 追加
-                            st.session_state.selected_season = season          # 追加
+                            st.session_state.selected_pitcher_id = pitcher.id
+                            st.session_state.selected_season = season
                             
                             # 重複を避けて検索履歴に追加
                             if pitcher not in st.session_state.pitcher_search_history:
                                 st.session_state.pitcher_search_history.append(pitcher)
                             
-                            # 試合データ取得のフラグを設定（直接取得せずフラグだけ設定）
+                            # 試合データ取得のフラグを設定
                             st.session_state.need_load_games = True
-                            st.experimental_rerun()  # 画面を再描画（重要な追加）
+                            st.experimental_rerun()  # 画面を再描画
             except Exception as e:
                 search_status.error(f"検索中にエラーが発生しました: {str(e)}")
         
-            # 修正後 - 試合データ読み込みのトリガー追加
-            # 選択された投手の表示
-            if st.session_state.selected_pitcher:
-                pitcher = st.session_state.selected_pitcher
-                st.sidebar.markdown(f"### 選択中: {pitcher.name}")
-                
-                # 試合データの取得が必要な場合（新しく追加したコード）
-                if st.session_state.need_load_games:
-                    self._load_pitcher_games(st.session_state.selected_pitcher_id, st.session_state.selected_season)
-                    st.session_state.need_load_games = False
-                
-                # 試合選択インターフェース
-                if st.session_state.pitcher_games:
-                    st.sidebar.markdown("### 試合選択")
-                
+        # 選択された投手の表示
+        if st.session_state.selected_pitcher:
+            pitcher = st.session_state.selected_pitcher
+            st.sidebar.markdown(f"### 選択中: {pitcher.name}")
+            
+            # 試合データの取得が必要な場合
+            if st.session_state.need_load_games:
+                self._load_pitcher_games(st.session_state.selected_pitcher_id, st.session_state.selected_season)
+                st.session_state.need_load_games = False
+            
+            # 試合選択インターフェース
+            if st.session_state.pitcher_games:
+                st.sidebar.markdown("### 試合選択")
+            
                 games = st.session_state.pitcher_games
                 game_options = [f"{game.date} vs {game.opponent or '不明'}" for game in games]
                 
                 # デフォルト選択
                 default_index = 0 if st.session_state.selected_game is None else \
-                                next((i for i, g in enumerate(games) if g.date == st.session_state.selected_game.date), 0)
+                               next((i for i, g in enumerate(games) if g.date == st.session_state.selected_game.date), 0)
                 
                 selected_game_idx = st.sidebar.selectbox(
                     "試合を選択", 
@@ -179,7 +160,7 @@ class StreamlitApp:
                 
                 st.session_state.selected_game = games[selected_game_idx]
             else:
-                st.sidebar.warning(f"{season}シーズンの試合データがありません")
+                st.sidebar.warning(f"{st.session_state.selected_season}シーズンの試合データがありません")
                 st.session_state.selected_game = None
         
         # 選択された投手IDと試合日を返す
