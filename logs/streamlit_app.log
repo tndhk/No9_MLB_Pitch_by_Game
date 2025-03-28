@@ -303,3 +303,1572 @@ UnboundLocalError: local variable 'StreamlitApp' referenced before assignment
 2025-03-28 13:01:03,479 - src.service_factory - INFO - DataVisualizerを作成しました
 2025-03-28 13:01:03,479 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
 2025-03-28 13:01:03,479 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:27:39,318 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:27:39,325 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:27:39,325 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:27:39,330 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:27:39,336 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:27:39,337 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:27:39,338 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:27:39,338 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:27:39,341 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:27:39,342 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:27:39,343 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:27:44,995 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:27:44,998 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:27:44,999 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:27:45,001 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:27:45,005 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:27:45,006 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:27:45,007 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:27:45,007 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:27:45,008 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:27:45,008 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:27:45,009 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:27:45,013 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:27:45,016 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:27:45,017 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:27:45,017 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:27:45,580 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:27:45,582 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:27:45,768 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:27:45,951 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:27:46,138 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:27:46,325 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:27:46,517 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:27:46,703 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:27:46,888 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:27:47,075 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:27:47,263 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:27:47,449 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:27:47,639 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:27:47,825 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:27:48,010 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:27:48,193 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:27:48,380 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:27:48,565 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:27:48,799 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:27:49,034 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:27:49,219 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:27:49,458 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:27:49,642 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:27:49,878 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:27:50,065 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:27:50,301 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:27:50,488 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:27:50,675 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:27:50,863 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:27:51,148 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:27:51,388 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:27:51,622 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:27:51,857 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:27:51,871 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:28:00,174 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:28:00,182 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:28:00,183 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:28:00,187 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:28:00,192 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:28:00,193 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:28:00,194 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:28:00,195 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:28:00,199 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:28:00,199 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:28:00,200 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:29:19,854 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:29:19,860 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:29:19,861 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:29:19,863 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:29:19,885 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:29:19,886 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:29:19,887 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:29:19,888 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:29:19,890 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:29:19,890 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:29:19,891 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:29:28,551 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:29:28,553 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:29:28,553 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:29:28,555 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:29:28,558 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:29:28,559 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:29:28,559 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:29:28,559 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:29:28,560 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:29:28,561 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:29:28,561 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:29:28,567 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:29:28,568 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:29:28,569 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:29:28,569 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:29:29,102 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:29:29,103 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:29:29,275 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:29:29,446 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:29:29,621 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:29:29,793 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:29:29,965 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:29:30,143 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:29:30,312 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:29:30,488 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:29:30,661 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:29:30,834 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:29:31,012 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:29:31,190 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:29:31,358 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:29:31,584 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:29:31,755 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:29:31,930 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:29:32,105 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:29:32,276 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:29:32,454 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:29:32,626 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:29:32,795 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:29:32,969 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:29:33,140 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:29:33,308 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:29:33,478 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:29:33,649 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:29:33,817 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:29:33,981 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:29:34,147 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:29:34,315 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:29:34,483 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:29:34,491 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:29:42,268 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:29:42,273 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:29:42,274 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:29:42,277 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:29:42,281 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:29:42,282 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:29:42,283 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:29:42,284 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:29:42,286 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:29:42,286 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:29:42,287 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:30:06,639 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:30:06,642 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:30:06,643 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:30:06,651 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:30:06,656 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:30:06,657 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:30:06,657 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:30:06,658 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:30:06,660 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:30:06,660 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:30:06,661 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:30:06,669 - src.presentation.streamlit_app - INFO - 投手名「Shohei」で検索を実行
+2025-03-28 13:30:06,671 - src.application.usecases - INFO - 投手名 'Shohei' で検索します
+2025-03-28 13:30:06,672 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei' で検索しています
+2025-03-28 13:30:06,673 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:30:07,157 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:30:07,160 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:30:07,280 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:30:07,397 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:30:07,517 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:30:07,640 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:30:07,758 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:30:07,876 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:30:07,997 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:30:08,115 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:30:08,232 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:30:08,351 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:30:08,477 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:30:08,606 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:30:08,722 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:30:08,842 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:30:08,962 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:30:09,078 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:30:09,201 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:30:09,323 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:30:09,445 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:30:09,563 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:30:09,679 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:30:09,797 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:30:09,914 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:30:10,032 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:30:10,150 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:30:10,270 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:30:10,392 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:30:10,515 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:30:10,633 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:30:10,751 - src.infrastructure.mlb_stats_client - INFO - 'Shohei'の検索結果: 1件
+2025-03-28 13:30:10,975 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:30:10,988 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:30:12,048 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:30:12,050 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:30:12,051 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:30:12,051 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:30:12,055 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:30:12,056 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:30:12,057 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:30:12,058 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:30:12,059 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:30:12,060 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:30:12,060 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:36:27,789 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:36:27,791 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:36:27,791 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:36:27,792 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:36:27,806 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:36:27,807 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:36:27,809 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:36:27,810 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:36:27,813 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:36:27,814 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:36:27,814 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:36:31,421 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:36:31,426 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:36:31,428 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:36:31,435 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:36:31,439 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:36:31,440 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:36:31,440 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:36:31,441 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:36:31,443 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:36:31,443 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:36:31,444 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:36:31,456 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:36:31,458 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:36:31,460 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:36:31,462 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:36:32,020 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:36:32,021 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:36:32,200 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:36:32,380 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:36:32,614 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:36:32,843 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:36:33,074 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:36:33,252 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:36:33,485 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:36:33,713 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:36:33,892 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:36:34,071 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:36:34,300 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:36:34,528 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:36:34,754 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:36:34,981 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:36:35,155 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:36:35,332 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:36:35,561 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:36:35,795 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:36:35,975 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:36:36,201 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:36:36,380 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:36:36,607 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:36:36,784 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:36:37,016 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:36:37,192 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:36:37,378 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:36:37,554 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:36:37,781 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:36:38,014 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:36:38,241 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:36:38,483 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:36:38,497 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:36:42,895 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:36:42,898 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:36:42,898 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:36:42,899 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:36:42,905 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:36:42,906 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:36:42,907 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:36:42,908 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:36:42,909 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:36:42,910 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:36:42,911 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:37:21,033 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:37:21,037 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:37:21,037 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:37:21,038 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:37:21,040 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:37:21,040 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:37:21,041 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:37:21,041 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:37:21,041 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:37:21,042 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:37:21,042 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:37:27,527 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:37:27,529 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:37:27,530 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:37:27,531 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:37:27,536 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:37:27,537 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:37:27,537 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:37:27,538 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:37:27,538 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:37:27,539 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:37:27,539 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:37:27,546 - src.presentation.streamlit_app - INFO - 投手名「Ohtani」で検索を実行
+2025-03-28 13:37:27,548 - src.application.usecases - INFO - 投手名 'Ohtani' で検索します
+2025-03-28 13:37:27,548 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Ohtani' で検索しています
+2025-03-28 13:37:27,549 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:37:28,054 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:37:28,056 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:37:28,225 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:37:28,394 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:37:28,566 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:37:28,737 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:37:28,911 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:37:29,080 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:37:29,252 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:37:29,432 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:37:29,603 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:37:29,777 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:37:29,947 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:37:30,129 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:37:30,303 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:37:30,469 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:37:30,634 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:37:30,811 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:37:30,982 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:37:31,155 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:37:31,331 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:37:31,506 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:37:31,678 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:37:31,849 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:37:32,021 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:37:32,194 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:37:32,368 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:37:32,541 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:37:32,712 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:37:32,882 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:37:33,052 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:37:33,223 - src.infrastructure.mlb_stats_client - INFO - 'Ohtani'の検索結果: 1件
+2025-03-28 13:37:33,445 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:37:33,459 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:37:35,067 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:37:35,068 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:37:35,068 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:37:35,069 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:37:35,071 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:37:35,071 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:37:35,071 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:37:35,072 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:37:35,072 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:37:35,072 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:37:35,073 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:39:32,348 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:39:32,350 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:39:32,351 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:39:32,351 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:39:32,354 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:39:32,354 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:39:32,354 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:39:32,355 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:39:32,356 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:39:32,356 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:39:32,356 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:39:42,872 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:39:42,874 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:39:42,874 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:39:42,875 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:39:42,880 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:39:42,880 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:39:42,881 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:39:42,881 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:39:42,882 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:39:42,883 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:39:42,883 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:39:42,890 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:39:42,892 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:39:42,892 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:39:42,893 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:39:43,387 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:39:43,389 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:39:43,561 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:39:43,734 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:39:43,907 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:39:44,084 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:39:44,255 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:39:44,430 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:39:44,602 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:39:44,782 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:39:44,955 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:39:45,132 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:39:45,305 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:39:45,483 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:39:45,655 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:39:45,824 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:39:45,995 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:39:46,165 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:39:46,338 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:39:46,515 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:39:46,751 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:39:46,927 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:39:47,100 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:39:47,272 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:39:47,444 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:39:47,616 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:39:47,788 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:39:47,964 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:39:48,142 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:39:48,319 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:39:48,489 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:39:48,665 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:39:48,838 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:39:48,859 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:39:51,925 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:39:51,930 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:39:51,931 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:39:51,934 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:39:51,938 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:39:51,939 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:39:51,940 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:39:51,940 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:39:51,942 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:39:51,943 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:39:51,943 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:42:51,865 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:42:51,868 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:42:51,869 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:42:51,870 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:42:51,873 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:42:51,874 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:42:51,874 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:42:51,875 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:42:51,878 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:42:51,879 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:42:51,879 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:42:57,232 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:42:57,235 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:42:57,236 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:42:57,238 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:42:57,242 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:42:57,243 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:42:57,243 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:42:57,244 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:42:57,246 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:42:57,247 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:42:57,247 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:42:57,254 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:42:57,255 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:42:57,257 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:42:57,257 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:42:57,750 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:42:57,752 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:42:57,919 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:42:58,086 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:42:58,312 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:42:58,480 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:42:58,646 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:42:58,818 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:42:58,989 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:42:59,165 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:42:59,337 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:42:59,512 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:42:59,682 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:42:59,863 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:43:00,034 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:43:00,205 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:43:00,377 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:43:00,546 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:43:00,720 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:43:00,893 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:43:01,076 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:43:01,247 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:43:01,421 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:43:01,596 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:43:01,767 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:43:01,940 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:43:02,111 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:43:02,285 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:43:02,461 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:43:02,630 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:43:02,800 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:43:02,969 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:43:03,187 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:43:03,201 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:43:04,765 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:43:04,768 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:43:04,769 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:43:04,770 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:43:04,773 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:43:04,774 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:43:04,775 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:43:04,775 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:43:04,776 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:43:04,777 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:43:04,777 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:43:35,231 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:43:35,236 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:43:35,237 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:43:35,240 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:43:35,252 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:43:35,253 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:43:35,253 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:43:35,254 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:43:35,256 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:43:35,257 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:43:35,257 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:43:35,266 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 13:43:35,267 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 13:43:35,268 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 13:43:35,269 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:43:35,767 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:43:35,768 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:43:35,929 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:43:36,045 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:43:36,160 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:43:36,271 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:43:36,384 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:43:36,541 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:43:36,655 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:43:36,764 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:43:36,959 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:43:37,129 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:43:37,242 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:43:37,356 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:43:37,471 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:43:37,585 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:43:37,742 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:43:37,901 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:43:38,025 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:43:38,140 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:43:38,299 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:43:38,409 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:43:38,560 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:43:38,672 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:43:38,787 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:43:38,898 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:43:39,015 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:43:39,132 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:43:39,256 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:43:39,372 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:43:39,487 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:43:39,604 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 13:43:39,762 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:43:39,778 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 13:44:03,722 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:44:03,729 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:44:03,731 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:44:03,737 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:44:03,748 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:44:03,749 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:44:03,750 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:44:03,751 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:44:03,753 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:44:03,753 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:44:03,754 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:50:34,364 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:50:34,366 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:50:34,366 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:50:34,368 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:50:34,371 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:50:34,373 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:50:34,373 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:50:34,374 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:50:34,375 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:50:34,376 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:50:34,377 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:50:37,990 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:50:37,994 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:50:37,994 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:50:37,998 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:50:38,005 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:50:38,006 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:50:38,006 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:50:38,007 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:50:38,008 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:50:38,009 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:50:38,009 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:50:38,017 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:50:38,018 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:50:38,019 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:50:38,020 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:50:38,526 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:50:38,527 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:50:38,636 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:50:38,746 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:50:38,857 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:50:38,970 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:50:39,086 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:50:39,197 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:50:39,310 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:50:39,422 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:50:39,535 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:50:39,650 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:50:39,762 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:50:39,881 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:50:39,995 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:50:40,109 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:50:40,229 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:50:40,345 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:50:40,554 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:50:40,670 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:50:40,786 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:50:40,900 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:50:41,014 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:50:41,131 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:50:41,246 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:50:41,362 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:50:41,479 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:50:41,601 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:50:41,719 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:50:41,835 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:50:41,954 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:50:42,073 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:50:42,309 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:50:42,324 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:50:43,290 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:50:43,294 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:50:43,294 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:50:43,295 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:50:43,297 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:50:43,297 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:50:43,298 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:50:43,298 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:50:43,299 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:50:43,299 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:50:43,300 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:51:53,261 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:51:53,263 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:51:53,266 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:51:53,268 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:51:53,273 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:51:53,274 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:51:53,275 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:51:53,275 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:51:53,277 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:51:53,277 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:51:53,277 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:51:56,224 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:51:56,228 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:51:56,228 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:51:56,230 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:51:56,233 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:51:56,234 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:51:56,234 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:51:56,235 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:51:56,236 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:51:56,236 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:51:56,237 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:51:56,240 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:51:56,241 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:51:56,242 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:51:56,244 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:51:56,753 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:51:56,755 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:51:56,928 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:51:57,151 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:51:57,388 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:51:57,612 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:51:57,841 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:51:58,009 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:51:58,231 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:51:58,408 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:51:58,580 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:51:58,752 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:51:58,925 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:51:59,157 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:51:59,379 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:51:59,606 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:51:59,779 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:51:59,952 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:52:00,172 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:52:00,426 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:52:00,602 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:52:00,847 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:52:01,021 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:52:01,247 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:52:01,425 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:52:01,659 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:52:01,832 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:52:02,006 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:52:02,181 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:52:02,350 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:52:02,521 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:52:02,695 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:52:02,871 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:52:02,883 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:52:04,182 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:52:04,187 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:52:04,188 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:52:04,189 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:52:04,194 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:52:04,195 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:52:04,196 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:52:04,197 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:52:04,198 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:52:04,199 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:52:04,200 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:52:32,712 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:52:32,716 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:52:32,716 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:52:32,719 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:52:32,723 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:52:32,723 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:52:32,724 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:52:32,724 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:52:32,725 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:52:32,726 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:52:32,726 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:52:36,065 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:52:36,068 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:52:36,069 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:52:36,071 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:52:36,078 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:52:36,079 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:52:36,079 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:52:36,081 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:52:36,082 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:52:36,083 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:52:36,084 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:52:36,088 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:52:36,089 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:52:36,091 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:52:36,092 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:52:36,602 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:52:36,604 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:52:36,723 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:52:36,834 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:52:36,949 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:52:37,063 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:52:37,181 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:52:37,295 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:52:37,409 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:52:37,523 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:52:37,634 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:52:37,746 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:52:37,865 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:52:37,976 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:52:38,084 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:52:38,197 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:52:38,314 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:52:38,429 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:52:38,549 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:52:38,661 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:52:38,772 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:52:38,889 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:52:39,000 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:52:39,114 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:52:39,230 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:52:39,342 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:52:39,456 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:52:39,570 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:52:39,690 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:52:39,805 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:52:39,918 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:52:40,032 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:52:40,143 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:52:40,158 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:52:43,186 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:52:43,190 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:52:43,190 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:52:43,191 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:52:43,196 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:52:43,196 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:52:43,197 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:52:43,198 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:52:43,199 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:52:43,199 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:52:43,200 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:04,464 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:04,466 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:04,466 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:04,467 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:04,469 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:04,470 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:04,470 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:04,470 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:04,471 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:04,471 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:04,471 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:07,081 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:07,084 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:07,084 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:07,085 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:07,088 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:07,089 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:07,089 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:07,089 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:07,090 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:07,090 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:07,090 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:07,095 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:53:07,097 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:53:07,097 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:53:07,098 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:53:07,625 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:53:07,627 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:53:07,810 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:53:07,993 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:53:08,235 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:53:08,423 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:53:08,602 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:53:08,783 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:53:08,966 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:53:09,149 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:53:09,333 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:53:09,519 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:53:09,701 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:53:09,879 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:53:10,055 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:53:10,235 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:53:10,420 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:53:10,601 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:53:10,783 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:53:11,014 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:53:11,196 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:53:11,426 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:53:11,602 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:53:11,853 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:53:12,040 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:53:12,279 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:53:12,468 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:53:12,651 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:53:12,833 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:53:13,015 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:53:13,259 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:53:13,497 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:53:13,682 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:53:13,694 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:53:14,828 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:14,830 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:14,830 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:14,831 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:14,834 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:14,835 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:14,836 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:14,836 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:14,837 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:14,838 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:14,838 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:39,816 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:39,818 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:39,818 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:39,821 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:39,823 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:39,824 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:39,825 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:39,825 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:39,828 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:39,829 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:39,831 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:42,312 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:42,315 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:42,316 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:42,317 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:42,321 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:42,321 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:42,322 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:42,323 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:42,324 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:42,324 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:42,325 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:53:42,329 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:53:42,332 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:53:42,333 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:53:42,334 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:53:42,832 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:53:42,834 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:53:43,008 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:53:43,179 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:53:43,354 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:53:43,529 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:53:43,698 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:53:43,873 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:53:44,045 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:53:44,223 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:53:44,397 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:53:44,570 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:53:44,792 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:53:44,972 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:53:45,163 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:53:45,340 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:53:45,565 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:53:45,740 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:53:45,913 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:53:46,083 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:53:46,257 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:53:46,429 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:53:46,597 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:53:46,766 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:53:46,936 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:53:47,103 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:53:47,271 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:53:47,444 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:53:47,613 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:53:47,832 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:53:48,002 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:53:48,172 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:53:48,291 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:53:48,306 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:53:50,779 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:53:50,782 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:53:50,783 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:53:50,784 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:53:50,789 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:53:50,790 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:53:50,791 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:53:50,791 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:53:50,792 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:53:50,793 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:53:50,794 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:54:06,691 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:54:06,692 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:54:06,692 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:54:06,693 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:54:06,695 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:54:06,696 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:54:06,696 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:54:06,696 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:54:06,697 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:54:06,697 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:54:06,697 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:54:09,042 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:54:09,046 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:54:09,047 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:54:09,049 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:54:09,052 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:54:09,053 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:54:09,053 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:54:09,054 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:54:09,054 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:54:09,055 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:54:09,055 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:54:09,060 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:54:09,061 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:54:09,063 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:54:09,066 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:54:09,565 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:54:09,566 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:54:09,682 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:54:09,801 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:54:09,917 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:54:10,033 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:54:10,155 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:54:10,272 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:54:10,388 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:54:10,507 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:54:10,624 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:54:10,741 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:54:10,859 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:54:10,973 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:54:11,084 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:54:11,195 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:54:11,307 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:54:11,425 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:54:11,542 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:54:11,652 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:54:11,767 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:54:11,882 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:54:12,000 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:54:12,118 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:54:12,234 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:54:12,347 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:54:12,461 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:54:12,574 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:54:12,685 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:54:12,795 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:54:12,905 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:54:13,017 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:54:13,128 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:54:13,138 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:54:17,345 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:54:17,349 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:54:17,350 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:54:17,352 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:54:17,357 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:54:17,357 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:54:17,358 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:54:17,359 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:54:17,360 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:54:17,361 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:54:17,361 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:57:25,128 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:57:25,133 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:57:25,133 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:57:25,135 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:57:25,139 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:57:25,139 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:57:25,140 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:57:25,140 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:57:25,141 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:57:25,141 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:57:25,141 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:57:28,538 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:57:28,545 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:57:28,546 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:57:28,548 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:57:28,557 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:57:28,558 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:57:28,558 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:57:28,558 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:57:28,561 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:57:28,561 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:57:28,561 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 13:57:28,566 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 13:57:28,567 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 13:57:28,568 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 13:57:28,570 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 13:57:29,180 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 13:57:29,180 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 13:57:29,355 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 13:57:29,528 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 13:57:29,703 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 13:57:29,877 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 13:57:30,051 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 13:57:30,224 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 13:57:30,395 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 13:57:30,574 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 13:57:30,753 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 13:57:30,927 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 13:57:31,098 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 13:57:31,270 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 13:57:31,441 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 13:57:31,614 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 13:57:31,790 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 13:57:31,959 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 13:57:32,133 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 13:57:32,303 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 13:57:32,474 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 13:57:32,650 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 13:57:32,832 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 13:57:33,015 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 13:57:33,186 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 13:57:33,365 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 13:57:33,540 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 13:57:33,715 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 13:57:33,890 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 13:57:34,062 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 13:57:34,232 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 13:57:34,405 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 13:57:34,633 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 13:57:34,656 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 13:57:55,976 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 13:57:55,981 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 13:57:55,982 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 13:57:55,984 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 13:57:55,989 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 13:57:55,990 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 13:57:55,990 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 13:57:55,991 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 13:57:55,993 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 13:57:55,994 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 13:57:55,995 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:04:56,943 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:04:56,945 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:04:56,946 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:04:56,947 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:04:56,953 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:04:56,957 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:04:56,958 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:04:56,959 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:04:56,961 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:04:56,962 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:04:56,962 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:04:56,969 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:05:03,702 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:05:03,706 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:05:03,706 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:05:03,708 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:05:03,711 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:05:03,711 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:05:03,712 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:05:03,713 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:05:03,714 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:05:03,715 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:05:03,715 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:05:03,720 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 14:05:03,721 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 14:05:03,722 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 14:05:03,722 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 14:05:04,233 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 14:05:04,235 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 14:05:04,408 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 14:05:04,576 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 14:05:04,806 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 14:05:04,980 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 14:05:05,152 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 14:05:05,322 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 14:05:05,496 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 14:05:05,673 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 14:05:05,854 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 14:05:06,026 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 14:05:06,196 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 14:05:06,375 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 14:05:06,549 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 14:05:06,721 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 14:05:06,890 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 14:05:07,065 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 14:05:07,236 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 14:05:07,409 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 14:05:07,585 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 14:05:07,756 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 14:05:07,927 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 14:05:08,098 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 14:05:08,273 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 14:05:08,447 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 14:05:08,621 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 14:05:08,792 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 14:05:08,967 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 14:05:09,136 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 14:05:09,310 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 14:05:09,484 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 14:05:09,606 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 14:05:09,621 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:05:09,628 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:05:12,235 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:05:12,239 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:05:12,240 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:05:12,242 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:05:12,246 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:05:12,247 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:05:12,248 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:05:12,248 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:05:12,249 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:05:12,250 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:05:12,252 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:05:12,257 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:05:18,223 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:05:18,227 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:05:18,228 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:05:18,229 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:05:18,232 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:05:18,233 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:05:18,233 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:05:18,235 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:05:18,237 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:05:18,238 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:05:18,239 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:05:18,245 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:05:20,582 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:05:20,586 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:05:20,586 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:05:20,587 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:05:20,591 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:05:20,592 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:05:20,592 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:05:20,593 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:05:20,594 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:05:20,595 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:05:20,595 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:05:20,600 - src.presentation.streamlit_app - INFO - 投手名「Imanaga」で検索を実行
+2025-03-28 14:05:20,601 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 14:05:20,601 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 14:05:20,603 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 14:05:21,075 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 14:05:21,078 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 14:05:21,197 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 14:05:21,317 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 14:05:21,437 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 14:05:21,552 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 14:05:21,670 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 14:05:21,786 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 14:05:21,900 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 14:05:22,020 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 14:05:22,141 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 14:05:22,262 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 14:05:22,380 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 14:05:22,499 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 14:05:22,620 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 14:05:22,739 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 14:05:22,855 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 14:05:22,983 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 14:05:23,102 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 14:05:23,223 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 14:05:23,338 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 14:05:23,453 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 14:05:23,566 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 14:05:23,680 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 14:05:23,795 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 14:05:23,944 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 14:05:24,063 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 14:05:24,175 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 14:05:24,286 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 14:05:24,404 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 14:05:24,520 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 14:05:24,654 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 14:05:24,772 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 14:05:24,786 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:05:24,795 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:05:32,189 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:05:32,197 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:05:32,199 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:05:32,201 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:05:32,205 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:05:32,206 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:05:32,206 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:05:32,207 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:05:32,208 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:05:32,208 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:05:32,209 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:05:32,214 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:06:32,529 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:06:32,534 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:06:32,535 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:06:32,537 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:06:32,541 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:06:32,542 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:06:32,542 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:06:32,543 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:06:32,544 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:06:32,545 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:06:32,545 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:06:32,553 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:06:35,391 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:06:35,392 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:06:35,393 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:06:35,394 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:06:35,398 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:06:35,398 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:06:35,399 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:06:35,400 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:06:35,400 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:06:35,401 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:06:35,401 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:06:35,404 - src.presentation.streamlit_app - INFO - 投手名「Shohei Ohtani」で検索を実行
+2025-03-28 14:06:35,405 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 14:06:35,406 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 14:06:35,406 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 14:06:35,921 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 14:06:35,923 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 14:06:36,096 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 14:06:36,271 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 14:06:36,444 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 14:06:36,614 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 14:06:36,785 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 14:06:36,955 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 14:06:37,126 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 14:06:37,302 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 14:06:37,475 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 14:06:37,649 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 14:06:37,766 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 14:06:37,884 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 14:06:38,001 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 14:06:38,118 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 14:06:38,291 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 14:06:38,463 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 14:06:38,579 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 14:06:38,693 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 14:06:38,866 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 14:06:38,984 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 14:06:39,155 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 14:06:39,273 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 14:06:39,444 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 14:06:39,561 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 14:06:39,732 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 14:06:39,905 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 14:06:40,080 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 14:06:40,201 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 14:06:40,318 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 14:06:40,436 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 14:06:40,556 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 14:06:40,569 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:06:40,574 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:06:44,093 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:06:44,098 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:06:44,100 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:06:44,104 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:06:44,113 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:06:44,114 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:06:44,115 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:06:44,115 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:06:44,120 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:06:44,120 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:06:44,122 - src.presentation.streamlit_app - INFO - アプリケーションを起動します
+2025-03-28 14:06:44,133 - src.presentation.streamlit_app - INFO - render_search_interface 終了: pitcher_id=None, game_date=None
+2025-03-28 14:09:23,294 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:23,297 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:23,297 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:23,301 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:23,308 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:23,309 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:23,311 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:23,311 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:23,313 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:23,314 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:23,314 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:27,213 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:27,217 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:27,218 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:27,220 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:27,223 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:27,223 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:27,224 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:27,224 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:27,226 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:27,229 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:27,230 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:27,262 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:27,263 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:27,263 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:27,264 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:27,267 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:27,268 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:27,268 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:27,269 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:27,270 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:27,270 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:27,271 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:27,273 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-28 14:09:27,273 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-28 14:09:27,274 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 14:09:27,750 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 14:09:27,752 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 14:09:27,868 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 14:09:27,985 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 14:09:28,099 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 14:09:28,218 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 14:09:28,336 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 14:09:28,496 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 14:09:28,612 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 14:09:28,727 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 14:09:28,841 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 14:09:29,004 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 14:09:29,120 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 14:09:29,237 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 14:09:29,350 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 14:09:29,467 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 14:09:29,627 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 14:09:29,787 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 14:09:29,903 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 14:09:30,025 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 14:09:30,185 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 14:09:30,299 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 14:09:30,459 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 14:09:30,577 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 14:09:30,737 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 14:09:30,854 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 14:09:31,012 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 14:09:31,172 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 14:09:31,333 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 14:09:31,449 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 14:09:31,564 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 14:09:31,680 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-28 14:09:31,841 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 14:09:31,856 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:09:38,356 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:38,360 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:38,360 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:38,363 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:38,368 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:38,370 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:38,370 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:38,371 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:38,374 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:38,374 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:38,375 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:38,383 - src.application.usecases - INFO - 投手ID 660271 の2023シーズンの試合を取得します
+2025-03-28 14:09:38,387 - src.infrastructure.data_repository - INFO - 投手ID 660271 の23試合分の情報を取得しました
+2025-03-28 14:09:38,387 - src.application.usecases - INFO - キャッシュから23試合分のデータを取得しました
+2025-03-28 14:09:47,428 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:47,433 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:47,433 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:47,436 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:47,442 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:47,443 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:47,444 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:47,445 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:47,446 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:47,447 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:47,447 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:48,581 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:09:48,584 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:09:48,585 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:09:48,586 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:09:48,589 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:09:48,590 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:09:48,591 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:09:48,592 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:09:48,593 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:09:48,594 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:09:48,601 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:09:48,611 - src.application.usecases - INFO - 投手ID 660271 の2023-07-14の試合を分析します
+2025-03-28 14:09:48,616 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:09:48,616 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-28 14:09:48,617 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 660271, 試合日 2023-07-14
+2025-03-28 14:09:50,554 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 94行のデータ取得
+2025-03-28 14:09:50,561 - src.infrastructure.data_repository - INFO - 投球データをキャッシュに保存しました: /app/data/pitch_data_660271_2023-07-14.pkl
+2025-03-28 14:09:50,627 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-28 14:09:50,631 - src.presentation.data_visualizer - INFO - パフォーマンスサマリーグラフを作成
+2025-03-28 14:09:51,582 - src.presentation.data_visualizer - INFO - 球種別分布グラフを作成
+2025-03-28 14:09:51,915 - src.presentation.data_visualizer - INFO - イニング別球速グラフを作成
+2025-03-28 14:09:52,230 - src.presentation.data_visualizer - INFO - イニング別投球分布グラフを作成
+2025-03-28 14:09:52,526 - src.presentation.data_visualizer - INFO - 球種別有効性グラフを作成
+2025-03-28 14:09:52,904 - src.presentation.data_visualizer - INFO - 被打球分布グラフを作成
+2025-03-28 14:10:14,540 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:14,545 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:14,546 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:14,548 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:14,552 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:14,553 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:14,553 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:14,554 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:14,556 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:14,557 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:14,557 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:14,567 - src.application.usecases - INFO - 投手ID 660271 の2023-07-14の試合を分析します
+2025-03-28 14:10:14,570 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:10:14,579 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-07-14.pkl
+2025-03-28 14:10:14,626 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-28 14:10:14,630 - src.presentation.data_visualizer - INFO - パフォーマンスサマリーグラフを作成
+2025-03-28 14:10:15,360 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:15,362 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:15,362 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:15,363 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:15,366 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:15,366 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:15,366 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:15,367 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:15,367 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:15,368 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:15,368 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:15,371 - src.application.usecases - INFO - 投手ID 660271 の2023-07-14の試合を分析します
+2025-03-28 14:10:15,374 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:10:15,377 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-07-14.pkl
+2025-03-28 14:10:15,398 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-28 14:10:15,400 - src.presentation.data_visualizer - INFO - パフォーマンスサマリーグラフを作成
+2025-03-28 14:10:16,006 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:16,009 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:16,009 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:16,011 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:16,014 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:16,015 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:16,015 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:16,015 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:16,017 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:16,017 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:16,017 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:16,023 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-28 14:10:16,025 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-28 14:10:16,026 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-28 14:10:16,524 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-28 14:10:16,526 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-28 14:10:16,636 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-28 14:10:16,748 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-28 14:10:16,866 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-28 14:10:16,979 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-28 14:10:17,098 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-28 14:10:17,215 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-28 14:10:17,326 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-28 14:10:17,433 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-28 14:10:17,544 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-28 14:10:17,657 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-28 14:10:17,774 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-28 14:10:17,888 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-28 14:10:18,001 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-28 14:10:18,118 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-28 14:10:18,233 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-28 14:10:18,351 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-28 14:10:18,465 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-28 14:10:18,581 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-28 14:10:18,695 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-28 14:10:18,810 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-28 14:10:18,926 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-28 14:10:19,042 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-28 14:10:19,156 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-28 14:10:19,270 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-28 14:10:19,387 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-28 14:10:19,507 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-28 14:10:19,623 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-28 14:10:19,739 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-28 14:10:19,855 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-28 14:10:19,973 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-28 14:10:20,136 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-28 14:10:20,151 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:10:20,160 - src.application.usecases - INFO - 投手ID 660271 の2023-07-14の試合を分析します
+2025-03-28 14:10:20,164 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-28 14:10:20,171 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-07-14.pkl
+2025-03-28 14:10:20,210 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-28 14:10:20,214 - src.presentation.data_visualizer - INFO - パフォーマンスサマリーグラフを作成
+2025-03-28 14:10:21,065 - src.presentation.data_visualizer - INFO - 球種別分布グラフを作成
+2025-03-28 14:10:21,336 - src.presentation.data_visualizer - INFO - イニング別球速グラフを作成
+2025-03-28 14:10:21,645 - src.presentation.data_visualizer - INFO - イニング別投球分布グラフを作成
+2025-03-28 14:10:21,888 - src.presentation.data_visualizer - INFO - 球種別有効性グラフを作成
+2025-03-28 14:10:22,221 - src.presentation.data_visualizer - INFO - 被打球分布グラフを作成
+2025-03-28 14:10:22,509 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:22,511 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:22,512 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:22,513 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:22,517 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:22,517 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:22,518 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:22,518 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:22,519 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:22,519 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:22,520 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:22,526 - src.application.usecases - INFO - 投手ID 684007 の2024シーズンの試合を取得します
+2025-03-28 14:10:22,530 - src.infrastructure.data_repository - INFO - 投手ID 684007 の0試合分の情報を取得しました
+2025-03-28 14:10:22,530 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-28 14:10:22,531 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2024シーズンの試合リストを取得します
+2025-03-28 14:10:22,531 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2024シーズン全体
+2025-03-28 14:10:28,962 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 2590行のデータ取得
+2025-03-28 14:10:28,978 - src.infrastructure.baseball_savant_client - INFO - 29個のユニークな試合日を特定しました
+2025-03-28 14:10:29,025 - src.infrastructure.baseball_savant_client - INFO - 29試合のデータを取得しました
+2025-03-28 14:10:29,032 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-09-22 (投手ID: 684007)
+2025-03-28 14:10:29,038 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-09-16 (投手ID: 684007)
+2025-03-28 14:10:29,047 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-09-10 (投手ID: 684007)
+2025-03-28 14:10:29,055 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-09-04 (投手ID: 684007)
+2025-03-28 14:10:29,062 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-30 (投手ID: 684007)
+2025-03-28 14:10:29,068 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-24 (投手ID: 684007)
+2025-03-28 14:10:29,074 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-18 (投手ID: 684007)
+2025-03-28 14:10:29,079 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-12 (投手ID: 684007)
+2025-03-28 14:10:29,085 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-06 (投手ID: 684007)
+2025-03-28 14:10:29,089 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-08-01 (投手ID: 684007)
+2025-03-28 14:10:29,094 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-07-27 (投手ID: 684007)
+2025-03-28 14:10:29,099 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-07-21 (投手ID: 684007)
+2025-03-28 14:10:29,104 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-07-10 (投手ID: 684007)
+2025-03-28 14:10:29,108 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-07-03 (投手ID: 684007)
+2025-03-28 14:10:29,113 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-06-27 (投手ID: 684007)
+2025-03-28 14:10:29,117 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-06-21 (投手ID: 684007)
+2025-03-28 14:10:29,123 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-06-15 (投手ID: 684007)
+2025-03-28 14:10:29,128 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-06-09 (投手ID: 684007)
+2025-03-28 14:10:29,133 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-06-04 (投手ID: 684007)
+2025-03-28 14:10:29,141 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-05-29 (投手ID: 684007)
+2025-03-28 14:10:29,146 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-05-18 (投手ID: 684007)
+2025-03-28 14:10:29,150 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-05-13 (投手ID: 684007)
+2025-03-28 14:10:29,154 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-05-07 (投手ID: 684007)
+2025-03-28 14:10:29,160 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-05-01 (投手ID: 684007)
+2025-03-28 14:10:29,165 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-04-26 (投手ID: 684007)
+2025-03-28 14:10:29,170 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-04-20 (投手ID: 684007)
+2025-03-28 14:10:29,176 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-04-13 (投手ID: 684007)
+2025-03-28 14:10:29,181 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-04-07 (投手ID: 684007)
+2025-03-28 14:10:29,186 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2024-04-01 (投手ID: 684007)
+2025-03-28 14:10:29,190 - src.application.usecases - INFO - 投手ID 684007 の2023-07-14の試合を分析します
+2025-03-28 14:10:29,191 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:10:29,192 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-28 14:10:29,193 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 試合日 2023-07-14
+2025-03-28 14:10:30,561 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007 - データが見つかりませんでした
+2025-03-28 14:10:30,563 - src.application.usecases - ERROR - 投手ID 684007 の2023-07-14の試合データが取得できませんでした
+2025-03-28 14:10:32,043 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:32,048 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:32,048 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:32,049 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:32,053 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:32,054 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:32,055 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:32,055 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:32,057 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:32,058 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:32,058 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:32,064 - src.application.usecases - INFO - 投手ID 684007 の2023-07-14の試合を分析します
+2025-03-28 14:10:32,067 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:10:32,069 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-28 14:10:32,070 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 試合日 2023-07-14
+2025-03-28 14:10:32,174 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007 - データが見つかりませんでした
+2025-03-28 14:10:32,175 - src.application.usecases - ERROR - 投手ID 684007 の2023-07-14の試合データが取得できませんでした
+2025-03-28 14:10:33,767 - __main__ - INFO - Streamlitアプリケーションを起動します
+2025-03-28 14:10:33,771 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-28 14:10:33,771 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-28 14:10:33,772 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-28 14:10:33,777 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-28 14:10:33,778 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-28 14:10:33,779 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-28 14:10:33,780 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-28 14:10:33,781 - src.service_factory - INFO - DataVisualizerを作成しました
+2025-03-28 14:10:33,782 - src.service_factory - INFO - Streamlitアプリケーションの作成が完了しました
+2025-03-28 14:10:33,782 - src.presentation.streamlit_app - INFO - シンプルなアプリケーションを起動します
+2025-03-28 14:10:33,789 - src.application.usecases - INFO - 投手ID 684007 の2024-09-16の試合を分析します
+2025-03-28 14:10:33,791 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-28 14:10:33,792 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-28 14:10:33,793 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 試合日 2024-09-16
+2025-03-28 14:10:35,269 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 99行のデータ取得
+2025-03-28 14:10:35,275 - src.infrastructure.data_repository - INFO - 投球データをキャッシュに保存しました: /app/data/pitch_data_684007_2024-09-16.pkl
+2025-03-28 14:10:35,297 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-28 14:10:35,300 - src.presentation.data_visualizer - INFO - パフォーマンスサマリーグラフを作成
+2025-03-28 14:10:36,084 - src.presentation.data_visualizer - INFO - 球種別分布グラフを作成
+2025-03-28 14:10:36,382 - src.presentation.data_visualizer - INFO - イニング別球速グラフを作成
+2025-03-28 14:10:36,694 - src.presentation.data_visualizer - INFO - イニング別投球分布グラフを作成
+2025-03-28 14:10:36,949 - src.presentation.data_visualizer - INFO - 球種別有効性グラフを作成
+2025-03-28 14:10:37,264 - src.presentation.data_visualizer - INFO - 被打球分布グラフを作成

@@ -5,9 +5,9 @@ import requests
 import pandas as pd
 import io
 import time
+import logging
 from datetime import datetime
 from typing import List, Dict, Optional, Any, Union
-import logging
 
 from src.domain.entities import Pitcher, Game
 from src.infrastructure.mlb_stats_client import MLBStatsClient
@@ -53,64 +53,97 @@ class BaseballSavantClient:
         self.last_request_time = time.time()
 
     def get_pitcher_games(self, pitcher_id: str, season: int) -> List[Game]:
+        """
+        特定投手の特定シーズンの試合リストを取得
+        
+        Parameters:
+        -----------
+        pitcher_id : str
+            投手ID
+        season : int
+            シーズン年
+            
+        Returns:
+        --------
+        List[Game]
+            Game エンティティのリスト
+        """
         self.logger.info(f"投手ID {pitcher_id}の{season}シーズンの試合リストを取得します")
         
-        season_data = self.get_pitch_data(pitcher_id, None, season=str(season))
-        
-        if season_data is None or season_data.empty:
-            self.logger.warning(f"投手ID {pitcher_id}の{season}シーズンデータが取得できませんでした")
-            return []
-
-        if 'game_date' not in season_data.columns or 'game_pk' not in season_data.columns:
-            self.logger.warning("データに試合日または試合ID (game_pk) 情報がありません")
-            return []
-
-        games = []
-
-        # ★★★★★ ここが重要 ★★★★★
-        # pitcher_id & game_pk ごとの投球数集計
-        game_groups = season_data.groupby(['game_pk', 'game_date'])
-
-        for (game_pk, game_date), game_data in game_groups:
-            # 試合で実際に投げてない場合を除外
-            if len(game_data) == 0:
-                continue
+        try:
+            # シーズンデータを取得
+            season_data = self.get_pitch_data(pitcher_id, None, season=str(season))
             
-            # opponent, stadium, home_away はそのまま処理
-            opponent = None
-            stadium = None
-            home_away = None
+            if season_data is None or season_data.empty:
+                self.logger.warning(f"投手ID {pitcher_id}の{season}シーズンデータが取得できませんでした")
+                return []
+
+            # 必要なカラムがあるか確認
+            if 'game_date' not in season_data.columns:
+                self.logger.warning("データに試合日情報がありません")
+                return []
             
-            if 'pitcher_team' in game_data.columns and 'home_team' in game_data.columns and 'away_team' in game_data.columns:
-                pitcher_team = game_data['pitcher_team'].iloc[0]
-                home_team = game_data['home_team'].iloc[0]
-                away_team = game_data['away_team'].iloc[0]
+            # game_pkカラムの確認
+            has_game_pk = 'game_pk' in season_data.columns
+            
+            games = []
+
+            # ゲームの日付をユニークに抽出
+            unique_dates = pd.to_datetime(season_data['game_date']).dt.date.unique()
+            self.logger.info(f"{len(unique_dates)}個のユニークな試合日を特定しました")
+            
+            # 各試合日に対して処理
+            for game_date in sorted(unique_dates, reverse=True):
+                iso_date = game_date.strftime('%Y-%m-%d')
                 
-                if pitcher_team == home_team:
-                    opponent = away_team
-                    home_away = 'home'
-                else:
-                    opponent = home_team
-                    home_away = 'away'
+                # この日付のデータを抽出
+                date_data = season_data[pd.to_datetime(season_data['game_date']).dt.date == game_date]
+                
+                # game_pkがある場合はそれを使用
+                game_pk = None
+                if has_game_pk and not date_data['game_pk'].empty:
+                    game_pk = int(date_data['game_pk'].iloc[0])
+                
+                # チーム情報の取得
+                opponent = None
+                home_away = None
+                stadium = None
+                
+                if 'home_team' in date_data.columns and 'away_team' in date_data.columns:
+                    if 'pitcher_team' in date_data.columns:
+                        pitcher_team = date_data['pitcher_team'].iloc[0] if not date_data['pitcher_team'].empty else None
+                        home_team = date_data['home_team'].iloc[0] if not date_data['home_team'].empty else None
+                        away_team = date_data['away_team'].iloc[0] if not date_data['away_team'].empty else None
+                        
+                        if pitcher_team and home_team and away_team:
+                            if pitcher_team == home_team:
+                                opponent = away_team
+                                home_away = 'home'
+                            else:
+                                opponent = home_team
+                                home_away = 'away'
+                
+                if 'stadium' in date_data.columns and not date_data['stadium'].empty:
+                    stadium = date_data['stadium'].iloc[0]
+                
+                # ゲームオブジェクトの作成
+                game = Game(
+                    date=iso_date,
+                    pitcher_id=pitcher_id,
+                    game_pk=game_pk,
+                    opponent=opponent,
+                    stadium=stadium,
+                    home_away=home_away
+                )
+                
+                games.append(game)
             
-            if 'stadium' in game_data.columns:
-                stadium = game_data['stadium'].iloc[0]
+            self.logger.info(f"{len(games)}試合のデータを取得しました")
+            return games
             
-            iso_date = pd.to_datetime(game_date).strftime('%Y-%m-%d')
-            
-            game = Game(
-                date=iso_date,
-                pitcher_id=pitcher_id,
-                game_pk=int(game_pk),
-                opponent=opponent,
-                stadium=stadium,
-                home_away=home_away
-            )
-            games.append(game)
-        
-        games.sort(key=lambda g: g.date, reverse=True)
-        self.logger.info(f"{len(games)}試合のデータを取得しました（投球データが存在する試合のみ）")
-        return games
+        except Exception as e:
+            self.logger.error(f"試合リスト取得中にエラーが発生しました: {str(e)}", exc_info=True)
+            return []
 
     def get_pitch_data(self, 
                     pitcher_id: str, 
@@ -162,7 +195,14 @@ class BaseballSavantClient:
         try:
             response = self.session.get(self.BASE_URL, params=params)
             response.raise_for_status()
-            df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
+            
+            # 空のCSVが返される場合があるので確認
+            content = response.content.decode('utf-8')
+            if not content.strip():
+                self.logger.warning(f"投手ID {pitcher_id} - 空のレスポンスが返されました")
+                return None
+                
+            df = pd.read_csv(io.StringIO(content))
 
             if df.empty:
                 self.logger.warning(f"投手ID {pitcher_id} - データが見つかりませんでした")
@@ -175,10 +215,9 @@ class BaseballSavantClient:
             self.logger.error(f"APIエラー: {str(e)}")
             raise
 
-        except pd.errors.ParserError:
-            self.logger.error("CSVパースエラー")
+        except pd.errors.ParserError as e:
+            self.logger.error(f"CSVパースエラー: {str(e)}")
             raise
-
     
     def search_pitcher(self, name: str) -> List[Pitcher]:
         """
