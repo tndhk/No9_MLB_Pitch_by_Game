@@ -1,3 +1,11 @@
+"""
+投球データの分析を担当するドメイン層のクラス
+"""
+import pandas as pd
+import numpy as np
+from typing import Dict, List, Any, Optional
+
+
 class PitchAnalyzer:
     """投球データの分析を担当するクラス"""
 
@@ -46,10 +54,11 @@ class PitchAnalyzer:
         # 各イニングの分析
         for inning, group in grouped:
             results['innings'].append(int(inning))
+            inning_str = str(inning)
             
             # 球速の分析
             if 'release_speed' in group.columns:
-                results['velocity'][inning] = {
+                results['velocity'][inning_str] = {
                     'mean': group['release_speed'].mean(),
                     'max': group['release_speed'].max(),
                     'min': group['release_speed'].min(),
@@ -57,23 +66,23 @@ class PitchAnalyzer:
                 }
             
             # 投球数
-            results['pitch_count'][inning] = len(group)
+            results['pitch_count'][inning_str] = len(group)
             
             # ストライク率
             if 'type' in group.columns:
-                strikes = group[group['type'].isin(['S', 'X'])].shape[0]  # S=swinging, X=called strike
-                results['strike_percentage'][inning] = strikes / len(group) * 100 if len(group) > 0 else 0
+                strikes = group[group['type'].isin(['S', 'X'])].shape[0]  # S=strike, X=in play
+                results['strike_percentage'][inning_str] = strikes / len(group) * 100 if len(group) > 0 else 0
             
             # 空振り率
             if 'description' in group.columns:
                 swings = group[group['description'].str.contains('swing', case=False, na=False)].shape[0]
                 whiffs = group[group['description'].str.contains('swinging_strike', case=False, na=False)].shape[0]
-                results['whiff_percentage'][inning] = whiffs / swings * 100 if swings > 0 else 0
+                results['whiff_percentage'][inning_str] = whiffs / swings * 100 if swings > 0 else 0
             
             # 球種分布
             if 'pitch_type' in group.columns:
                 pitch_types = group['pitch_type'].value_counts().to_dict()
-                results['pitch_type_distribution'][inning] = pitch_types
+                results['pitch_type_distribution'][inning_str] = pitch_types
         
         return results
 
@@ -108,6 +117,13 @@ class PitchAnalyzer:
         """
         if data.empty or 'pitch_type' not in data.columns:
             return {'error': 'データが無効または必要なカラムがありません'}
+        
+        # 球種が空白や欠損値のデータを除外
+        data = data.dropna(subset=['pitch_type'])
+        data = data[data['pitch_type'] != '']
+        
+        if data.empty:
+            return {'error': '有効な球種データがありません'}
         
         # 球種でグループ化
         grouped = data.groupby('pitch_type')
@@ -205,7 +221,10 @@ class PitchAnalyzer:
             return pd.DataFrame()
         
         # 打球結果がある行のみを抽出
-        is_batted_ball = data['description'].str.contains('hit', case=False, na=False)
+        if 'description' not in data.columns:
+            return pd.DataFrame()
+            
+        is_batted_ball = data['description'].str.contains('hit_into_play', case=False, na=False)
         batted_balls = data[is_batted_ball].copy()
         
         if batted_balls.empty:
@@ -313,5 +332,7 @@ class PitchAnalyzer:
         # 対戦打者数
         if 'at_bat_number' in data.columns:
             summary['batters_faced'] = data['at_bat_number'].nunique()
+        elif 'batter' in data.columns:
+            summary['batters_faced'] = data['batter'].nunique()
         
         return summary

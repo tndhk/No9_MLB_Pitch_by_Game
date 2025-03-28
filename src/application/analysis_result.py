@@ -1,3 +1,11 @@
+"""
+分析結果を格納するデータクラス
+"""
+from dataclasses import dataclass
+from typing import Dict, Any, Optional
+import pandas as pd
+
+
 @dataclass
 class AnalysisResult:
     """分析結果を格納するクラス"""
@@ -28,4 +36,4 @@ class AnalysisResult:
         return self.error is None and \
                self.inning_analysis and \
                self.pitch_type_analysis and \
-               self.performance_summary
+               self.performance_summary is not None
