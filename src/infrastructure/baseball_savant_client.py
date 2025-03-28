@@ -1,3 +1,18 @@
+"""
+Baseball Savant (Statcast) APIとの連携を担当するクライアント
+"""
+import requests
+import pandas as pd
+import io
+import time
+from datetime import datetime
+from typing import List, Dict, Optional, Any, Union
+import logging
+
+from src.domain.entities import Pitcher, Game
+from src.infrastructure.mlb_stats_client import MLBStatsClient
+
+
 class BaseballSavantClient:
     """
     Baseball Savant (Statcast)からデータを取得するクライアント
@@ -36,58 +51,38 @@ class BaseballSavantClient:
             time.sleep(wait_time)
         
         self.last_request_time = time.time()
-    
+
     def get_pitcher_games(self, pitcher_id: str, season: int) -> List[Game]:
-        """
-        指定した投手の特定シーズンの試合リストを取得
-        
-        Parameters:
-        -----------
-        pitcher_id : str
-            投手のMLB ID
-        season : int
-            シーズン年
-            
-        Returns:
-        --------
-        List[Game]
-            試合エンティティのリスト
-        """
         self.logger.info(f"投手ID {pitcher_id}の{season}シーズンの試合リストを取得します")
         
-        # シーズンデータを取得
         season_data = self.get_pitch_data(pitcher_id, None, season=str(season))
         
         if season_data is None or season_data.empty:
             self.logger.warning(f"投手ID {pitcher_id}の{season}シーズンデータが取得できませんでした")
             return []
-        
-        # game_dateカラムが存在するか確認
-        if 'game_date' not in season_data.columns:
-            self.logger.warning("データに試合日情報がありません")
+
+        if 'game_date' not in season_data.columns or 'game_pk' not in season_data.columns:
+            self.logger.warning("データに試合日または試合ID (game_pk) 情報がありません")
             return []
-        
-        # game_pkカラムが存在するか確認（試合ID）
-        has_game_pk = 'game_pk' in season_data.columns
-        
-        # teamカラムが存在するか確認
-        has_team = 'home_team' in season_data.columns and 'away_team' in season_data.columns
-        
-        # ユニークな試合をグループ化
+
         games = []
-        unique_game_dates = season_data['game_date'].unique()
-        
-        for game_date in unique_game_dates:
-            # そのゲームのデータだけ抽出
-            game_data = season_data[season_data['game_date'] == game_date]
+
+        # ★★★★★ ここが重要 ★★★★★
+        # pitcher_id & game_pk ごとの投球数集計
+        game_groups = season_data.groupby(['game_pk', 'game_date'])
+
+        for (game_pk, game_date), game_data in game_groups:
+            # 試合で実際に投げてない場合を除外
+            if len(game_data) == 0:
+                continue
             
-            # ゲーム情報の抽出
+            # opponent, stadium, home_away はそのまま処理
             opponent = None
             stadium = None
             home_away = None
             
-            if has_team:
-                pitcher_team = game_data['pitcher_team'].iloc[0] if 'pitcher_team' in game_data.columns else None
+            if 'pitcher_team' in game_data.columns and 'home_team' in game_data.columns and 'away_team' in game_data.columns:
+                pitcher_team = game_data['pitcher_team'].iloc[0]
                 home_team = game_data['home_team'].iloc[0]
                 away_team = game_data['away_team'].iloc[0]
                 
@@ -101,90 +96,39 @@ class BaseballSavantClient:
             if 'stadium' in game_data.columns:
                 stadium = game_data['stadium'].iloc[0]
             
-            # ISO形式に変換
-            try:
-                date_obj = pd.to_datetime(game_date)
-                iso_date = date_obj.strftime('%Y-%m-%d')
-            except:
-                iso_date = str(game_date)
+            iso_date = pd.to_datetime(game_date).strftime('%Y-%m-%d')
             
-            # Gameエンティティ作成
             game = Game(
                 date=iso_date,
                 pitcher_id=pitcher_id,
+                game_pk=int(game_pk),
                 opponent=opponent,
                 stadium=stadium,
                 home_away=home_away
             )
-            
             games.append(game)
         
-        # 日付でソート
         games.sort(key=lambda g: g.date, reverse=True)
-        
-        self.logger.info(f"{len(games)}試合のデータを取得しました")
+        self.logger.info(f"{len(games)}試合のデータを取得しました（投球データが存在する試合のみ）")
         return games
-    
+
     def get_pitch_data(self, 
-                      pitcher_id: str, 
-                      game_date: Optional[str] = None, 
-                      season: str = "2023",
-                      team: Optional[str] = None) -> Optional[pd.DataFrame]:
+                    pitcher_id: str, 
+                    game_date: Optional[str] = None,
+                    game_pk: Optional[int] = None,
+                    season: str = "2023",
+                    team: Optional[str] = None) -> Optional[pd.DataFrame]:
         """
-        特定投手の投球データを取得
-        
-        Parameters:
-        -----------
-        pitcher_id : str
-            投手のMLB ID
-        game_date : str, optional
-            試合日（YYYY-MM-DD形式）。Noneの場合は日付指定なし（シーズン全体）
-        season : str, optional
-            シーズン年（デフォルト: "2023"）
-        team : str, optional
-            チーム略称（例: 'NYY', 'LAD'）
-            
-        Returns:
-        --------
-        Optional[pd.DataFrame]
-            投手の投球データ。取得失敗時はNone
+        特定投手の投球データを取得（game_pk優先）
         """
-        # 日付形式の検証（指定がある場合）
-        if game_date:
-            try:
-                datetime.strptime(game_date, '%Y-%m-%d')
-            except ValueError:
-                self.logger.error("日付は'YYYY-MM-DD'形式で指定してください")
-                raise ValueError("日付は'YYYY-MM-DD'形式で指定してください")
-        
-        # リクエストパラメータの設定
+
+        # ----- 共通パラメータ -----
         params = {
             'all': 'true',
-            'hfPT': '',
-            'hfAB': '',
             'hfGT': 'R|',  # レギュラーシーズンのみ
-            'hfPR': '',
-            'hfZ': '',
-            'stadium': '',
-            'hfBBL': '',
-            'hfNewZones': '',
-            'hfPull': '',
-            'hfC': '',
-            'hfSea': f'{season}|',  # シーズン（年）
-            'hfSit': '',
             'player_type': 'pitcher',
-            'hfOuts': '',
-            'pitcher_throws': '',
-            'batter_stands': '',
-            'hfSA': '',
             'pitchers_lookup[]': str(pitcher_id),
-            'team': team if team else '',
-            'position': '',
-            'hfRO': '',
-            'home_road': '',
-            'hfFlag': '',
-            'metric_1': '',
-            'hfInn': '',
+            'team': team or '',
             'min_pitches': '0',
             'min_results': '0',
             'group_by': 'name',
@@ -194,41 +138,47 @@ class BaseballSavantClient:
             'min_pas': '0',
             'type': 'details'
         }
-        
-        # 特定の試合日が指定されている場合
-        if game_date:
+
+        # ----- クエリ条件を決定 -----
+        if game_pk:
+            params['game_pk'] = str(game_pk)
+            self.logger.info(f"Baseball Savantからデータ取得: 投手ID {pitcher_id}, game_pk {game_pk}")
+        elif game_date:
+            try:
+                datetime.strptime(game_date, '%Y-%m-%d')
+            except ValueError:
+                raise ValueError("日付は'YYYY-MM-DD'形式で指定してください")
             params['game_date_gt'] = game_date
             params['game_date_lt'] = game_date
-            self.logger.info(f"Baseball Savantからデータを取得中: 投手ID {pitcher_id}, 試合日 {game_date}")
+            self.logger.info(f"Baseball Savantからデータ取得: 投手ID {pitcher_id}, 試合日 {game_date}")
         else:
-            self.logger.info(f"Baseball Savantからデータを取得中: 投手ID {pitcher_id}, {season}シーズン全体")
-        
-        # レート制限の対応
+            params['hfSea'] = f'{season}|'
+            self.logger.info(f"Baseball Savantからデータ取得: 投手ID {pitcher_id}, {season}シーズン全体")
+
+        # ----- レート制限考慮 -----
         self._wait_for_rate_limit()
-        
+
+        # ----- API Request -----
         try:
-            # CSVデータのリクエスト
             response = self.session.get(self.BASE_URL, params=params)
-            response.raise_for_status()  # エラーレスポンスの場合は例外を発生
-            
-            # CSVデータの解析
-            csv_data = response.content.decode('utf-8')
-            df = pd.read_csv(io.StringIO(csv_data))
-            
-            # データが空でないか確認
+            response.raise_for_status()
+            df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
+
             if df.empty:
-                self.logger.warning(f"警告: 投手ID {pitcher_id}のデータが見つかりませんでした")
+                self.logger.warning(f"投手ID {pitcher_id} - データが見つかりませんでした")
                 return None
-                
-            self.logger.info(f"取得成功: {len(df)}行のデータを取得しました")
+
+            self.logger.info(f"取得成功: {len(df)}行のデータ取得")
             return df
-            
+
         except requests.exceptions.RequestException as e:
-            self.logger.error(f"エラー: データ取得中にエラーが発生しました - {str(e)}")
+            self.logger.error(f"APIエラー: {str(e)}")
             raise
+
         except pd.errors.ParserError:
-            self.logger.error("エラー: CSVデータの解析に失敗しました")
+            self.logger.error("CSVパースエラー")
             raise
+
     
     def search_pitcher(self, name: str) -> List[Pitcher]:
         """

@@ -1,14 +1,14 @@
-version: '3.8'
+version: '3'
 
 services:
-  mlb-pitcher-analyzer:
+  app:
     build: .
-    container_name: mlb-pitcher-analyzer
     ports:
       - "8501:8501"
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
+      - .:/app
     environment:
       - CACHE_DIR=/app/data
       - DB_PATH=/app/data/db.sqlite

@@ -1,3 +1,14 @@
+"""
+MLB StatsAPIからデータを取得するクライアント
+選手情報の検索を担当
+"""
+import requests
+import re
+import time
+import logging
+from typing import List, Dict, Any, Optional
+
+
 class MLBStatsClient:
     """
     MLB StatsAPIからデータを取得するクライアント
@@ -101,7 +112,7 @@ class MLBStatsClient:
         except Exception as e:
             self.logger.error(f"ロスター取得エラー (チームID: {team_id}): {str(e)}")
             return []
-    
+
     def search_player(self, name: str, position: Optional[str] = None) -> List[Dict[str, Any]]:
         """
         選手名から選手を検索
@@ -153,7 +164,7 @@ class MLBStatsClient:
                     self.logger.debug(f"選手が見つかりました: {full_name} (ID: {player_info['id']}, チーム: {team_name})")
         
         self.logger.info(f"'{name}'の検索結果: {len(results)}件")
-        return results
+        return results   
     
     def search_pitcher(self, name: str) -> List[Dict[str, Any]]:
         """
@@ -169,36 +180,14 @@ class MLBStatsClient:
         List[Dict[str, Any]]
             検索結果の投手リスト
         """
-        return self.search_player(name, position='P')
+        return self.search_player(name)
     
     def get_player_details(self, player_id: int) -> Dict[str, Any]:
         """
-        選手の詳細情報を取得
-        
-        Parameters:
-        -----------
-        player_id : int
-            選手ID
-            
-        Returns:
-        --------
-        Dict[str, Any]
-            選手の詳細情報
+        選手IDから詳細情報を取得
         """
-        url = f"{self.BASE_URL}/people/{player_id}"
-        
-        try:
-            self.logger.info(f"選手ID {player_id} の詳細情報を取得")
-            response = self.session.get(url)
-            response.raise_for_status()
-            data = response.json()
-            
-            if 'people' in data and len(data['people']) > 0:
-                return data['people'][0]
-            else:
-                self.logger.warning(f"選手ID {player_id} の詳細情報が見つかりませんでした")
-                return {}
-                
-        except Exception as e:
-            self.logger.error(f"選手詳細取得エラー (ID: {player_id}): {str(e)}")
-            return {}
+        url = f"https://statsapi.mlb.com/api/v1/people/{player_id}"
+        response = self.session.get(url)
+        response.raise_for_status()
+        data = response.json()
+        return data.get('people', [{}])[0]  # 安全に取得
