@@ -1,3 +1,21 @@
+"""
+データの可視化を担当するクラス
+グラフやチャートの生成を行う
+"""
+import io
+import base64
+import logging
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.figure as figure
+import seaborn as sns
+from typing import Dict, List, Any, Optional, Tuple
+
+# Figureという型ヒントのために必要
+from matplotlib.figure import Figure
+
+
 class DataVisualizer:
     """データの可視化を担当するクラス"""
     

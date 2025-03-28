@@ -1,3 +1,14 @@
+"""
+Streamlitアプリケーションのエントリーポイント
+"""
+import os
+import sys
+import logging
+from typing import Dict, Any
+
+from src.service_factory import ServiceFactory
+
+
 def get_config() -> Dict[str, Any]:
     """設定を取得"""
     # 環境変数から設定を読み込む（または固定値を使用）

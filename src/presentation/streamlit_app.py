@@ -1,3 +1,21 @@
+"""
+Streamlitアプリケーションのメインクラス
+"""
+from __future__ import annotations
+
+import streamlit as st
+import pandas as pd
+from typing import List, Optional, Dict, Any
+import logging
+
+from src.domain.entities import Pitcher, Game
+from src.application.usecases import PitcherGameAnalysisUseCase
+from src.presentation.data_visualizer import DataVisualizer
+from src.application.analysis_result import AnalysisResult
+import time
+
+
+
 class StreamlitApp:
     """Streamlitアプリケーションのメインクラス"""
     
@@ -104,7 +122,6 @@ class StreamlitApp:
                     search_status.error(f"「{pitcher_name}」に一致する投手が見つかりませんでした")
                 else:
                     # 検索結果の表示
-# 検索結果の表示
                     search_status.success(f"{len(pitchers)}人の投手が見つかりました")
                     
                     # 検索結果をセッション状態に保存
@@ -164,8 +181,8 @@ class StreamlitApp:
                 st.session_state.selected_game = None
         
         # 選択された投手IDと試合日を返す
-        pitcher_id = st.session_state.selected_pitcher.id if st.session_state.selected_pitcher else None
-        game_date = st.session_state.selected_game.date if st.session_state.selected_game else None
+        pitcher_id = st.session_state.selected_pitcher_id if hasattr(st.session_state, 'selected_pitcher_id') and st.session_state.selected_pitcher_id else None
+        game_date = st.session_state.selected_game.date if hasattr(st.session_state, 'selected_game') and st.session_state.selected_game else None
         
         return pitcher_id, game_date
     

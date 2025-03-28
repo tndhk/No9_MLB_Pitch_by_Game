@@ -1,3 +1,15 @@
+"""
+アプリケーションのメインエントリーポイント
+"""
+import sys
+import os
+import argparse
+import logging
+from typing import Dict, Any
+
+from src.service_factory import ServiceFactory
+
+
 def parse_args() -> Dict[str, Any]:
     """コマンドライン引数を解析"""
     parser = argparse.ArgumentParser(description='MLB投手1試合分析ツール')

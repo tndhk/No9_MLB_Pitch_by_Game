@@ -1,3 +1,20 @@
+"""
+サービスファクトリクラス
+アプリケーション全体の依存性を管理し、必要なオブジェクトを提供する
+"""
+import os
+import logging
+from typing import Dict, Any
+
+from src.infrastructure.baseball_savant_client import BaseballSavantClient
+from src.infrastructure.data_repository import DataRepository
+from src.domain.pitch_analyzer import PitchAnalyzer
+from src.presentation.data_visualizer import DataVisualizer
+from src.application.usecases import PitcherGameAnalysisUseCase
+from src.presentation.streamlit_app import StreamlitApp
+from src.config import get_config
+
+
 class ServiceFactory:
     """
     サービスファクトリクラス
@@ -94,15 +111,21 @@ class ServiceFactory:
         return self._instances['pitcher_game_analysis_use_case']
     
     def create_streamlit_app(self) -> StreamlitApp:
-        """StreamlitAppのインスタンスを作成/取得"""
-        if 'streamlit_app' not in self._instances:
-            use_case = self.create_pitcher_game_analysis_use_case()
-            visualizer = self.create_data_visualizer()
-            
-            self._instances['streamlit_app'] = StreamlitApp(
-                use_case=use_case,
-                visualizer=visualizer
-            )
-            self.logger.info("StreamlitAppを作成しました")
+        """
+        Streamlitアプリケーションのインスタンスを作成
         
-        return self._instances['streamlit_app']
+        Returns:
+        --------
+        StreamlitApp
+            Streamlitアプリケーションのインスタンス
+        """
+        self.logger.info("Streamlitアプリケーションを作成しています")
+        
+        # 必要なコンポーネントを取得
+        use_case = self.create_pitcher_game_analysis_use_case()
+        visualizer = self.create_data_visualizer()
+        
+        # アプリケーションのインスタンスを作成
+        app = StreamlitApp(use_case, visualizer)
+        self.logger.info("Streamlitアプリケーションの作成が完了しました")
+        return app
