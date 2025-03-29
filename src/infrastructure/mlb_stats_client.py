@@ -191,3 +191,51 @@ class MLBStatsClient:
         response.raise_for_status()
         data = response.json()
         return data.get('people', [{}])[0]  # 安全に取得
+    
+    def get_player_details(self, player_id: int) -> Dict[str, Any]:
+        """
+        選手IDから詳細情報を取得
+        """
+        url = f"https://statsapi.mlb.com/api/v1/people/{player_id}"
+        response = self.session.get(url)
+        response.raise_for_status()
+        data = response.json()
+        return data.get('people', [{}])[0]  # 安全に取得
+        
+    def get_game_info(self, game_pk: int) -> Dict[str, Any]:
+        """
+        試合IDから試合情報を取得
+        
+        Parameters:
+        -----------
+        game_pk : int
+            試合ID
+            
+        Returns:
+        --------
+        Dict[str, Any]
+            試合情報
+        """
+        url = f"{self.BASE_URL}/game/{game_pk}/feed/live"
+        
+        try:
+            self.logger.info(f"試合情報を取得 (試合ID: {game_pk})")
+            response = self.session.get(url)
+            response.raise_for_status()
+            data = response.json()
+            
+            # 必要な情報を抽出
+            game_data = data.get('gameData', {})
+            teams = game_data.get('teams', {})
+            home_team = teams.get('home', {}).get('name')
+            away_team = teams.get('away', {}).get('name')
+            venue = game_data.get('venue', {}).get('name')
+            
+            return {
+                'home_team': home_team,
+                'away_team': away_team,
+                'venue': venue
+            }
+        except Exception as e:
+            self.logger.error(f"試合情報取得エラー (試合ID: {game_pk}): {str(e)}")
+            return {}

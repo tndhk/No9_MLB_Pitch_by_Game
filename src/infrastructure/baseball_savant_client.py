@@ -109,6 +109,7 @@ class BaseballSavantClient:
                 home_away = None
                 stadium = None
                 
+                # Baseball Savantデータから直接チーム情報の取得を試みる
                 if 'home_team' in date_data.columns and 'away_team' in date_data.columns:
                     if 'pitcher_team' in date_data.columns:
                         pitcher_team = date_data['pitcher_team'].iloc[0] if not date_data['pitcher_team'].empty else None
@@ -123,9 +124,55 @@ class BaseballSavantClient:
                                 opponent = home_team
                                 home_away = 'away'
                 
+                # カラム名が異なる場合の対応（team_homeやteam_awayなど）
+                if opponent is None:
+                    possible_home_cols = ['home_team', 'team_home', 'home']
+                    possible_away_cols = ['away_team', 'team_away', 'away']
+                    possible_pitcher_cols = ['pitcher_team', 'team', 'player_team']
+                    
+                    # 存在するカラムを探す
+                    home_col = next((col for col in possible_home_cols if col in date_data.columns), None)
+                    away_col = next((col for col in possible_away_cols if col in date_data.columns), None)
+                    pitcher_col = next((col for col in possible_pitcher_cols if col in date_data.columns), None)
+                    
+                    if home_col and away_col:
+                        home_team = date_data[home_col].iloc[0] if not date_data[home_col].empty else None
+                        away_team = date_data[away_col].iloc[0] if not date_data[away_col].empty else None
+                        
+                        if pitcher_col:
+                            pitcher_team = date_data[pitcher_col].iloc[0] if not date_data[pitcher_col].empty else None
+                            if pitcher_team and home_team and away_team:
+                                if pitcher_team == home_team:
+                                    opponent = away_team
+                                    home_away = 'home'
+                                else:
+                                    opponent = home_team
+                                    home_away = 'away'
+                        else:
+                            # 投手のチームがわからない場合はホーム・アウェイ両方表示
+                            if home_team and away_team:
+                                opponent = f"{away_team} @ {home_team}"
+                
+                # 球場情報を取得
                 if 'stadium' in date_data.columns and not date_data['stadium'].empty:
                     stadium = date_data['stadium'].iloc[0]
                 
+                # MLB StatsAPIから情報を補完（game_pkがある場合）
+                if (opponent is None or stadium is None) and game_pk:
+                    self.logger.info(f"チーム情報をMLB StatsAPIから取得 (試合ID: {game_pk})")
+                    game_info = self.mlb_stats_client.get_game_info(game_pk)
+                    
+                    if game_info:
+                        # 対戦チーム情報がまだない場合は設定
+                        if opponent is None and 'home_team' in game_info and 'away_team' in game_info:
+                            home_team = game_info.get('home_team', '')
+                            away_team = game_info.get('away_team', '')
+                            opponent = f"{away_team} @ {home_team}"
+                        
+                        # 球場情報がまだない場合は設定
+                        if stadium is None and 'venue' in game_info:
+                            stadium = game_info.get('venue')
+
                 # ゲームオブジェクトの作成
                 game = Game(
                     date=iso_date,

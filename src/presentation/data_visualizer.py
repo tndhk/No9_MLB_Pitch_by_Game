@@ -15,6 +15,9 @@ from typing import Dict, List, Any, Optional, Tuple
 # Figureという型ヒントのために必要
 from matplotlib.figure import Figure
 
+# 球種の日本語名マッピング - すでに変換済みのデータを使用するため冗長だが保険として残す
+from src.domain.pitch_utils import PITCH_TYPE_MAPPING, get_pitch_name_ja
+
 
 class DataVisualizer:
     """データの可視化を担当するクラス"""

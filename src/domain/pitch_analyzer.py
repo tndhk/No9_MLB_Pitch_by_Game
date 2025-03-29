@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List, Any, Optional
 
+# 球種変換用のユーティリティをインポート
+from src.domain.pitch_utils import PITCH_TYPE_MAPPING, get_pitch_name_ja
 
 class PitchAnalyzer:
     """投球データの分析を担当するクラス"""

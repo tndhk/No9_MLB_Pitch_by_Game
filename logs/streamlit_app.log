@@ -14563,3 +14563,1523 @@ TypeError: plotly.graph_objs._figure.Figure.update_layout() got multiple values 
 2025-03-29 02:02:35,652 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
 2025-03-29 02:02:35,681 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
 2025-03-29 02:02:35,710 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:07:47,709 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:07:47,738 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:07:47,739 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:07:47,747 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:07:47,751 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:07:47,752 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:07:47,752 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:07:47,753 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:07:47,753 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:07:47,754 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:07:47,755 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:07:47,774 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:07:47,776 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:07:47,787 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:07:47,821 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:07:47,825 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:07:47,924 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:07:47,945 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:07:47,971 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:07:47,991 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:07:48,015 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:07:49,107 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:07:49,110 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:07:49,111 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:07:49,111 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:07:49,115 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:07:49,116 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:07:49,117 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:07:49,117 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:07:49,118 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:07:49,118 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:07:49,119 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:07:49,123 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:07:49,123 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:07:49,124 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:07:49,697 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:07:49,699 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:07:49,870 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:07:50,041 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:07:50,222 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:07:50,405 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:07:50,592 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:07:50,769 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:07:50,944 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:07:51,118 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:07:51,292 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:07:51,465 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:07:51,636 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:07:51,811 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:07:51,988 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:07:52,162 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:07:52,337 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:07:52,511 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:07:52,683 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:07:52,859 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:07:53,031 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:07:53,202 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:07:53,397 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:07:53,568 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:07:53,740 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:07:53,910 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:07:54,083 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:07:54,256 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:07:54,429 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:07:54,599 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:07:54,768 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:07:54,939 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:07:55,481 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:07:55,499 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:07:55,514 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:07:55,534 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:07:55,566 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:07:55,621 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:07:55,626 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:07:55,791 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:07:55,815 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:07:55,848 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:07:55,869 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:07:55,913 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:08:00,001 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:00,016 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:08:00,017 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:08:00,020 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:08:00,031 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:08:00,031 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:08:00,032 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:08:00,033 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:08:00,033 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:08:00,034 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:08:00,034 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:00,049 - src.application.usecases - INFO - 投手ID 684007 の2024シーズンの試合を取得します
+2025-03-29 02:08:00,052 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:08:00,053 - src.application.usecases - INFO - キャッシュから29試合分のデータを取得しました
+2025-03-29 02:08:00,056 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:08:00,058 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:08:00,066 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:08:00,100 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:08:00,103 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:08:00,200 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:08:00,222 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:08:00,251 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:08:00,269 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:08:00,289 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:08:04,440 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:04,444 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:08:04,444 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:08:04,445 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:08:04,450 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:08:04,450 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:08:04,451 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:08:04,452 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:08:04,453 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:08:04,454 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:08:04,455 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:04,461 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:08:04,465 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:08:04,468 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:08:04,485 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:08:04,488 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:08:04,575 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:08:04,593 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:08:04,618 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:08:04,636 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:08:04,657 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:08:05,623 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:05,628 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:08:05,629 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:08:05,631 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:08:05,635 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:08:05,635 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:08:05,636 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:08:05,637 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:08:05,638 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:08:05,638 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:08:05,639 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:08:05,644 - src.application.usecases - INFO - 投手ID 684007 の2024-09-10の試合を分析します
+2025-03-29 02:08:05,647 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:08:05,648 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-29 02:08:05,649 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 試合日 2024-09-10
+2025-03-29 02:08:07,072 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 89行のデータ取得
+2025-03-29 02:08:07,079 - src.infrastructure.data_repository - INFO - 投球データをキャッシュに保存しました: /app/data/pitch_data_684007_2024-09-10.pkl
+2025-03-29 02:08:07,107 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:08:07,109 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:08:07,174 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:08:07,193 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:08:07,219 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:08:07,237 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:08:07,256 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:18:08,055 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:08,058 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:18:08,059 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:18:08,060 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:18:08,064 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:18:08,064 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:18:08,064 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:18:08,065 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:18:08,065 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:18:08,065 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:18:08,066 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:08,074 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:18:08,075 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:18:08,076 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:18:08,719 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:18:08,721 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:18:08,904 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:18:09,089 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:18:09,267 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:18:09,437 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:18:09,609 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:18:09,782 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:18:09,959 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:18:10,130 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:18:10,311 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:18:10,487 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:18:10,661 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:18:10,845 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:18:11,025 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:18:11,198 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:18:11,370 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:18:11,543 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:18:11,717 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:18:11,897 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:18:12,072 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:18:12,246 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:18:12,419 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:18:12,591 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:18:12,784 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:18:12,955 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:18:13,212 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:18:13,391 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:18:13,461 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:13,466 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:18:13,467 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:18:13,469 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:18:13,476 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:18:13,477 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:18:13,478 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:18:13,478 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:18:13,479 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:18:13,479 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:18:13,480 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:13,489 - src.application.usecases - INFO - 投手ID 684007 の2024-09-10の試合を分析します
+2025-03-29 02:18:13,494 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:13,503 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-09-10.pkl
+2025-03-29 02:18:13,564 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:18:13,567 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:18:13,593 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:18:13,673 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:18:13,695 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:18:13,723 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:18:13,742 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:18:13,761 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:18:13,792 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:18:14,098 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:18:14,263 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:18:14,438 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:18:14,454 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:15,356 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:15,366 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:18:15,367 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:18:15,369 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:18:15,374 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:18:15,374 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:18:15,375 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:18:15,375 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:18:15,376 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:18:15,376 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:18:15,377 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:15,381 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:18:15,382 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:18:15,383 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:18:15,901 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:18:15,902 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:18:16,017 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:18:16,201 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:18:16,330 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:18:16,454 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:18:16,581 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:18:16,723 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:18:16,839 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:18:16,958 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:18:17,080 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:18:17,242 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:18:17,361 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:18:17,490 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:18:17,617 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:18:17,770 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:18:17,889 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:18:18,009 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:18:18,124 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:18:18,292 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:18:18,413 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:18:18,529 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:18:18,648 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:18:18,818 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:18:18,940 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:18:19,059 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:18:19,176 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:18:19,342 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:18:19,463 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:18:19,583 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:18:19,701 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:18:19,864 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:18:19,983 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:18:20,001 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:20,025 - src.application.usecases - INFO - 投手ID 684007 の2024-09-10の試合を分析します
+2025-03-29 02:18:20,030 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:20,040 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-09-10.pkl
+2025-03-29 02:18:20,093 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:18:20,104 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:18:20,220 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:18:20,238 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:18:20,264 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:18:20,282 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:18:20,303 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:18:22,131 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:22,136 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:18:22,137 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:18:22,139 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:18:22,143 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:18:22,144 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:18:22,145 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:18:22,146 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:18:22,147 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:18:22,148 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:18:22,149 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:22,154 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:18:22,159 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:18:22,160 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:18:22,161 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:18:22,162 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:18:22,266 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:18:22,271 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:18:22,273 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:18:22,274 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:18:23,048 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:18:23,049 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:18:23,062 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:18:23,072 - src.application.usecases - INFO - 投手ID 684007 の2024-09-10の試合を分析します
+2025-03-29 02:18:23,075 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:23,079 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-09-10.pkl
+2025-03-29 02:18:23,103 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:18:23,106 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:18:23,173 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:18:23,192 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:18:23,218 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:18:23,238 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:18:23,257 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:18:25,042 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:25,045 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:18:25,046 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:18:25,047 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:18:25,051 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:18:25,052 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:18:25,053 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:18:25,054 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:18:25,054 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:18:25,055 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:18:25,055 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:18:25,061 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:18:25,064 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:18:25,069 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:18:25,091 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:18:25,094 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:18:25,160 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:18:25,179 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:18:25,205 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:18:25,223 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:18:25,244 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:19:49,226 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:49,229 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:19:49,230 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:19:49,232 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:19:49,244 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:19:49,244 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:19:49,245 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:19:49,245 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:19:49,246 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:19:49,246 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:19:49,247 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:52,119 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:52,123 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:19:52,124 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:19:52,125 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:19:52,130 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:19:52,131 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:19:52,131 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:19:52,132 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:19:52,133 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:19:52,133 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:19:52,134 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:53,012 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:53,015 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:19:53,015 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:19:53,017 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:19:53,023 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:19:53,023 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:19:53,024 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:19:53,024 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:19:53,025 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:19:53,025 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:19:53,026 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:53,639 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:53,642 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:19:53,643 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:19:53,643 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:19:53,646 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:19:53,647 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:19:53,648 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:19:53,648 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:19:53,649 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:19:53,650 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:19:53,651 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:19:53,656 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:19:53,656 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:19:53,657 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:19:54,229 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:19:54,231 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:19:54,474 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:19:54,758 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:19:54,991 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:19:55,282 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:19:55,515 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:19:55,694 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:19:55,929 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:19:56,154 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:19:56,340 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:19:56,515 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:19:56,750 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:19:56,979 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:19:57,220 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:19:57,457 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:19:57,638 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:19:57,903 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:19:58,079 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:19:58,311 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:19:58,493 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:19:58,725 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:19:58,951 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:19:59,190 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:19:59,378 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:19:59,730 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:19:59,908 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:20:00,166 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:20:00,344 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:20:00,576 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:20:00,816 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:20:01,091 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:20:01,273 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:20:01,287 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:20:02,925 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:20:02,929 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:20:02,930 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:20:02,932 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:20:02,937 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:20:02,938 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:20:02,939 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:20:02,940 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:20:02,941 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:20:02,943 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:20:02,943 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:20:02,950 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:20:02,954 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:20:02,956 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:20:02,958 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:20:02,958 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:20:03,163 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:20:03,174 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:20:03,177 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:20:03,178 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:20:03,741 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:20:03,742 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:20:03,756 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:20:05,351 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:20:05,356 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:20:05,357 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:20:05,358 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:20:05,361 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:20:05,362 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:20:05,362 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:20:05,363 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:20:05,364 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:20:05,364 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:20:05,365 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:20:05,371 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:20:05,374 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:20:05,380 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:20:05,400 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:20:05,404 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:20:05,472 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:20:05,498 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:20:05,527 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:20:05,547 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:20:05,568 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:22:58,691 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:22:58,693 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:22:58,693 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:22:58,694 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:22:58,700 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:22:58,700 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:22:58,700 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:22:58,701 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:22:58,701 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:22:58,701 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:22:58,702 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:02,496 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:02,499 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:23:02,499 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:23:02,501 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:23:02,506 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:23:02,507 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:23:02,507 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:23:02,508 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:23:02,509 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:23:02,510 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:23:02,510 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:03,224 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:03,226 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:23:03,227 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:23:03,228 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:23:03,232 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:23:03,232 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:23:03,233 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:23:03,233 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:23:03,234 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:23:03,235 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:23:03,235 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:03,722 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:03,725 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:23:03,725 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:23:03,726 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:23:03,729 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:23:03,730 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:23:03,730 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:23:03,731 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:23:03,731 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:23:03,732 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:23:03,732 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:03,738 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:23:03,739 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:23:03,740 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:23:04,244 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:23:04,245 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:23:04,358 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:23:04,541 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:23:04,662 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:23:04,769 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:23:04,877 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:23:05,067 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:23:05,183 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:23:05,297 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:23:05,412 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:23:05,590 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:23:05,705 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:23:05,833 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:23:05,954 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:23:06,113 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:23:06,228 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:23:06,340 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:23:06,450 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:23:06,637 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:23:06,762 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:23:06,878 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:23:06,992 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:23:07,165 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:23:07,279 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:23:07,400 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:23:07,520 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:23:07,689 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:23:07,805 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:23:07,919 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:23:08,033 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:23:08,213 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:23:08,430 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:23:08,445 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:23:10,255 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:10,258 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:23:10,259 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:23:10,260 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:23:10,264 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:23:10,265 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:23:10,265 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:23:10,265 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:23:10,266 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:23:10,267 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:23:10,268 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:10,276 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:23:10,280 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:23:10,280 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:23:10,280 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:23:10,281 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:23:10,384 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:23:10,391 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:23:10,392 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:23:10,393 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:23:10,886 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:23:10,887 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:23:10,900 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:23:12,320 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:12,325 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:23:12,326 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:23:12,327 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:23:12,333 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:23:12,333 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:23:12,334 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:23:12,334 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:23:12,335 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:23:12,336 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:23:12,336 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:23:12,344 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:23:12,347 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:23:12,353 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:23:12,411 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:23:12,418 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:23:12,943 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:23:12,969 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:23:13,013 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:23:13,031 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:23:13,049 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:32:07,623 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:07,630 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:32:07,630 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:32:07,631 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:32:07,635 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:32:07,635 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:32:07,635 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:32:07,636 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:32:07,636 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:32:07,636 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:32:07,636 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:07,642 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:32:07,643 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:32:07,644 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:32:08,202 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:32:08,203 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:32:08,373 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:32:08,629 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:32:08,890 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:32:09,126 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:32:09,356 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:32:09,534 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:32:09,777 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:32:10,004 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:32:10,177 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:32:10,345 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:32:10,580 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:32:10,825 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:32:11,065 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:32:11,345 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:32:11,520 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:32:11,692 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:32:11,920 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:32:12,157 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:32:12,393 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:32:12,625 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:32:12,800 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:32:13,025 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:32:13,202 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:32:13,442 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:32:13,630 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:32:13,804 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:32:13,973 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:32:14,193 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:32:14,489 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:32:14,711 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:32:14,878 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:32:14,887 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:32:14,892 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:32:14,896 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:32:14,902 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:32:14,930 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:32:14,930 - src.presentation.plotly_streamlit_app - ERROR - 分析エラー: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+Traceback (most recent call last):
+  File "/app/src/presentation/plotly_streamlit_app.py", line 120, in run
+    result.ensure_pitch_types_translated()
+AttributeError: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+2025-03-29 02:32:18,291 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:18,294 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:32:18,294 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:32:18,295 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:32:18,299 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:32:18,299 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:32:18,300 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:32:18,300 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:32:18,301 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:32:18,301 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:32:18,302 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:18,307 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:32:18,310 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:32:18,311 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:32:18,311 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:32:18,312 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:32:18,404 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:32:18,408 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:32:18,410 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:32:18,410 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:32:18,925 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:32:18,927 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:32:18,940 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:32:18,950 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:32:18,954 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:32:18,958 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:32:18,979 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:32:18,980 - src.presentation.plotly_streamlit_app - ERROR - 分析エラー: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+Traceback (most recent call last):
+  File "/app/src/presentation/plotly_streamlit_app.py", line 120, in run
+    result.ensure_pitch_types_translated()
+AttributeError: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+2025-03-29 02:32:20,663 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:20,665 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:32:20,665 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:32:20,666 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:32:20,669 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:32:20,670 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:32:20,670 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:32:20,671 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:32:20,671 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:32:20,671 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:32:20,672 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:20,679 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:32:20,681 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:32:20,686 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:32:20,705 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:32:20,706 - src.presentation.plotly_streamlit_app - ERROR - 分析エラー: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+Traceback (most recent call last):
+  File "/app/src/presentation/plotly_streamlit_app.py", line 120, in run
+    result.ensure_pitch_types_translated()
+AttributeError: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+2025-03-29 02:32:23,416 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:23,420 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:32:23,421 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:32:23,422 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:32:23,425 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:32:23,426 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:32:23,426 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:32:23,426 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:32:23,427 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:32:23,427 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:32:23,427 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:32:23,435 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:32:23,438 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:32:23,443 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:32:23,466 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:32:23,466 - src.presentation.plotly_streamlit_app - ERROR - 分析エラー: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+Traceback (most recent call last):
+  File "/app/src/presentation/plotly_streamlit_app.py", line 120, in run
+    result.ensure_pitch_types_translated()
+AttributeError: 'AnalysisResult' object has no attribute 'ensure_pitch_types_translated'
+2025-03-29 02:33:12,323 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:12,325 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:12,325 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:12,326 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:12,330 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:12,331 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:12,331 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:12,332 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:12,334 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:12,335 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:12,335 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:14,661 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:14,663 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:14,663 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:14,664 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:14,669 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:14,669 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:14,670 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:14,671 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:14,671 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:14,672 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:14,672 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:15,472 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:15,473 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:15,474 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:15,475 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:15,479 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:15,479 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:15,480 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:15,480 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:15,481 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:15,482 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:15,482 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:16,030 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:16,033 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:16,034 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:16,034 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:16,038 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:16,039 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:16,039 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:16,040 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:16,040 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:16,040 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:16,041 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:16,045 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:33:16,046 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:33:16,047 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:33:16,609 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:33:16,609 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:33:16,884 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:33:17,128 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:33:17,316 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:33:17,639 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:33:17,931 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:33:18,123 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:33:18,364 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:33:18,739 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:33:18,982 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:33:19,168 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:33:19,406 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:33:19,734 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:33:20,029 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:33:20,270 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:33:20,458 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:33:20,727 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:33:20,967 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:33:21,206 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:33:21,393 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:33:21,693 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:33:21,882 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:33:22,130 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:33:22,318 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:33:22,554 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:33:22,823 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:33:23,009 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:33:23,197 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:33:23,494 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:33:23,758 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:33:24,003 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:33:24,224 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:33:24,237 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:33:27,308 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:27,312 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:27,312 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:27,313 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:27,319 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:27,319 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:27,320 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:27,320 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:27,320 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:27,321 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:27,321 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:27,329 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:33:27,333 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:33:27,334 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:33:27,334 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:33:27,334 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:33:27,440 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:33:27,446 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:33:27,448 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:33:27,449 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:33:28,004 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:33:28,005 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:33:28,019 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:33:29,851 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:29,854 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:33:29,855 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:33:29,856 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:33:29,861 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:33:29,862 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:33:29,862 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:33:29,862 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:33:29,863 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:33:29,863 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:33:29,863 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:33:29,869 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:33:29,872 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:33:29,879 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:33:29,898 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:33:29,901 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:33:29,972 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:33:29,990 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:33:30,016 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:33:30,036 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:33:30,071 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:36:10,890 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:36:10,897 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:36:10,898 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:36:10,902 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:36:10,910 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:36:10,911 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:36:10,912 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:36:10,912 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:36:10,912 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:36:10,913 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:36:10,913 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:36:10,926 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:36:10,933 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:36:10,947 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:36:10,984 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:36:10,990 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:36:11,124 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:36:11,160 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:36:11,234 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:36:11,292 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:36:11,335 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:38:14,848 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:14,852 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:38:14,852 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:38:14,854 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:38:14,858 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:38:14,859 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:38:14,859 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:38:14,859 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:38:14,860 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:38:14,860 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:38:14,860 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:14,877 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:38:14,881 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:38:14,890 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:38:14,933 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:38:14,937 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:38:15,073 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:38:15,095 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:38:15,124 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:38:15,146 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:38:15,167 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:38:15,406 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:15,408 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:38:15,408 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:38:15,408 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:38:15,410 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:38:15,410 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:38:15,411 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:38:15,411 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:38:15,411 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:38:15,411 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:38:15,412 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:15,414 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:38:15,414 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:38:15,414 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:38:15,959 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:38:15,961 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:38:16,135 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:38:16,362 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:38:16,539 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:38:16,768 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:38:17,001 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:38:17,174 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:38:17,404 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:38:17,642 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:38:17,817 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:38:17,986 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:38:18,159 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:38:18,336 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:38:18,511 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:38:18,683 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:38:18,863 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:38:19,033 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:38:19,209 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:38:19,388 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:38:19,556 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:38:19,728 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:38:19,913 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:38:20,083 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:38:20,259 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:38:20,433 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:38:20,609 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:38:20,786 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:38:20,960 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:38:21,135 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:38:21,247 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:21,251 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:38:21,252 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:38:21,253 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:38:21,257 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:38:21,258 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:38:21,258 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:38:21,259 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:38:21,259 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:38:21,260 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:38:21,260 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:21,266 - src.application.usecases - INFO - 投手ID 684007 の2024シーズンの試合を取得します
+2025-03-29 02:38:21,269 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:38:21,269 - src.application.usecases - INFO - キャッシュから29試合分のデータを取得しました
+2025-03-29 02:38:21,272 - src.application.usecases - INFO - 投手ID 684007 の2025-03-18の試合を分析します
+2025-03-29 02:38:21,273 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:38:21,276 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2025-03-18.pkl
+2025-03-29 02:38:21,297 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:38:21,300 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:38:21,326 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:38:21,369 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:38:21,387 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:38:21,413 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:38:21,432 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:38:21,452 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:38:21,539 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:38:21,754 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:38:21,768 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:38:23,317 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:23,323 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:38:23,324 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:38:23,325 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:38:23,328 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:38:23,329 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:38:23,329 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:38:23,329 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:38:23,330 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:38:23,330 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:38:23,330 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:38:23,337 - src.application.usecases - INFO - 投手ID 684007 の2024-09-22の試合を分析します
+2025-03-29 02:38:23,340 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:38:23,346 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-09-22.pkl
+2025-03-29 02:38:23,369 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:38:23,373 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:38:23,440 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:38:23,458 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:38:23,484 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:38:23,504 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:38:23,528 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:23,978 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:23,982 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:23,982 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:23,985 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:23,990 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:23,991 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:23,991 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:23,992 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:23,992 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:23,993 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:23,993 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:24,005 - src.application.usecases - INFO - 投手ID 684007 の2024-09-22の試合を分析します
+2025-03-29 02:39:24,007 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:24,015 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-09-22.pkl
+2025-03-29 02:39:24,052 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:24,057 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:24,149 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:24,168 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:24,198 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:24,218 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:24,238 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:24,750 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:24,753 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:24,753 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:24,754 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:24,757 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:24,758 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:24,759 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:24,759 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:24,760 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:24,760 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:24,761 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:24,767 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:24,771 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:24,777 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:24,802 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:24,806 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:24,872 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:24,890 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:24,916 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:24,933 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:24,957 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:28,686 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:28,688 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:28,689 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:28,690 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:28,693 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:28,694 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:28,694 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:28,695 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:28,696 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:28,696 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:28,697 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:28,705 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:28,729 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:28,732 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:28,756 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:28,760 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:28,826 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:28,844 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:28,869 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:28,887 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:28,907 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:31,382 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:31,386 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:31,386 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:31,387 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:31,390 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:31,390 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:31,391 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:31,391 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:31,392 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:31,392 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:31,392 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:31,398 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:39:31,401 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:39:31,402 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:39:31,403 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:39:31,403 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:39:31,516 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:39:31,520 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:39:31,522 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:39:31,523 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:39:32,086 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:39:32,087 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:39:32,099 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:39:32,111 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:32,117 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:32,122 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:32,145 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:32,149 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:32,220 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:32,238 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:32,263 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:32,281 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:32,300 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:34,902 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:34,904 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:34,905 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:34,905 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:34,910 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:34,911 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:34,911 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:34,912 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:34,912 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:34,912 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:34,913 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:34,919 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:34,922 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:34,925 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:34,944 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:34,947 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:35,021 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:35,042 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:35,077 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:35,098 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:35,118 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:35,933 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:35,936 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:35,937 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:35,937 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:35,941 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:35,942 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:35,942 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:35,943 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:35,943 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:35,943 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:35,944 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:35,948 - src.application.usecases - INFO - 投手名 'Imanaga' で検索します
+2025-03-29 02:39:35,949 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Imanaga' で検索しています
+2025-03-29 02:39:35,949 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:39:36,463 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:39:36,465 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:39:36,637 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:39:36,751 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:39:36,976 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:39:37,092 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:39:37,212 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:39:37,383 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:39:37,505 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:39:37,624 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:39:37,798 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:39:37,921 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:39:38,042 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:39:38,160 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:39:38,277 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:39:38,399 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:39:38,554 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:39:38,673 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:39:38,797 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:39:38,916 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:39:39,078 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:39:39,197 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:39:39,317 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:39:39,455 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:39:39,601 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:39:39,720 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:39:39,843 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:39:40,016 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:39:40,136 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:39:40,254 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:39:40,373 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:39:40,493 - src.infrastructure.mlb_stats_client - INFO - 'Imanaga'の検索結果: 1件
+2025-03-29 02:39:40,647 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:39:40,656 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:40,660 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:40,663 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:40,665 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:40,684 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:40,687 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:40,753 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:40,772 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:40,798 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:40,816 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:40,834 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:43,017 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:43,021 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:43,022 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:43,023 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:43,027 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:43,028 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:43,028 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:43,029 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:43,029 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:43,029 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:43,029 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:43,036 - src.application.usecases - INFO - 投手ID 684007 の2021シーズンの試合を取得します
+2025-03-29 02:39:43,040 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:39:43,040 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:39:43,041 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2021シーズンの試合リストを取得します
+2025-03-29 02:39:43,041 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2021シーズン全体
+2025-03-29 02:39:44,430 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007 - データが見つかりませんでした
+2025-03-29 02:39:44,431 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007の2021シーズンデータが取得できませんでした
+2025-03-29 02:39:44,436 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:44,439 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:44,444 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:44,474 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:44,479 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:44,560 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:44,580 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:44,608 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:44,625 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:44,644 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:47,515 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:47,519 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:47,520 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:47,521 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:47,525 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:47,526 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:47,526 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:47,527 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:47,527 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:47,528 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:47,528 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:47,537 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:47,566 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:47,573 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:47,595 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:47,598 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:47,671 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:47,688 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:47,713 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:47,733 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:47,753 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:48,599 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:48,601 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:48,602 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:48,603 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:48,607 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:48,607 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:48,607 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:48,608 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:48,608 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:48,609 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:48,609 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:48,615 - src.application.usecases - INFO - 投手ID 684007 の2023シーズンの試合を取得します
+2025-03-29 02:39:48,619 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:39:48,619 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:39:48,620 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2023シーズンの試合リストを取得します
+2025-03-29 02:39:48,620 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2023シーズン全体
+2025-03-29 02:39:50,109 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007 - データが見つかりませんでした
+2025-03-29 02:39:50,110 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 684007の2023シーズンデータが取得できませんでした
+2025-03-29 02:39:50,114 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:50,117 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:50,121 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:50,147 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:50,151 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:50,225 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:50,243 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:50,268 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:50,285 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:50,303 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:53,921 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:53,924 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:53,925 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:53,926 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:53,929 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:53,929 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:53,930 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:53,931 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:53,931 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:53,932 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:53,932 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:53,939 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:53,943 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:53,947 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:53,984 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:53,989 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:54,057 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:54,074 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:54,099 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:54,119 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:54,143 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:39:54,971 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:54,974 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:39:54,975 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:39:54,976 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:39:54,979 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:39:54,979 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:39:54,980 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:39:54,980 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:39:54,981 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:39:54,981 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:39:54,982 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:39:54,987 - src.application.usecases - INFO - 投手ID 684007 の2024シーズンの試合を取得します
+2025-03-29 02:39:54,992 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:39:54,992 - src.application.usecases - INFO - キャッシュから29試合分のデータを取得しました
+2025-03-29 02:39:54,996 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:39:54,997 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:39:54,999 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:39:55,026 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:39:55,030 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:39:55,117 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:39:55,134 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:39:55,158 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:39:55,177 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:39:55,195 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:02,254 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:02,258 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:02,258 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:02,259 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:02,263 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:02,264 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:02,265 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:02,265 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:02,265 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:02,266 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:02,266 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:02,273 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:40:02,278 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:40:02,302 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:40:02,322 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:02,325 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:02,392 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:02,410 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:02,435 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:02,452 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:02,472 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:04,398 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:04,402 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:04,403 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:04,405 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:04,411 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:04,412 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:04,413 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:04,413 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:04,413 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:04,414 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:04,414 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:04,424 - src.application.usecases - INFO - 投手ID 684007 の2025シーズンの試合を取得します
+2025-03-29 02:40:04,430 - src.infrastructure.data_repository - INFO - 投手ID 684007 の30試合分の情報を取得しました
+2025-03-29 02:40:04,430 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:40:04,431 - src.infrastructure.baseball_savant_client - INFO - 投手ID 684007の2025シーズンの試合リストを取得します
+2025-03-29 02:40:04,431 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 684007, 2025シーズン全体
+2025-03-29 02:40:04,515 - src.infrastructure.baseball_savant_client - INFO - 取得成功: 69行のデータ取得
+2025-03-29 02:40:04,522 - src.infrastructure.baseball_savant_client - INFO - 1個のユニークな試合日を特定しました
+2025-03-29 02:40:04,524 - src.infrastructure.baseball_savant_client - INFO - チーム情報をMLB StatsAPIから取得 (試合ID: 778563)
+2025-03-29 02:40:04,524 - src.infrastructure.mlb_stats_client - INFO - 試合情報を取得 (試合ID: 778563)
+2025-03-29 02:40:04,994 - src.infrastructure.mlb_stats_client - ERROR - 試合情報取得エラー (試合ID: 778563): 404 Client Error: Not Found for url: https://statsapi.mlb.com/api/v1/game/778563/feed/live
+2025-03-29 02:40:04,994 - src.infrastructure.baseball_savant_client - INFO - 1試合のデータを取得しました
+2025-03-29 02:40:05,004 - src.infrastructure.data_repository - INFO - 試合情報を保存しました: 2025-03-18 (投手ID: 684007)
+2025-03-29 02:40:05,010 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:40:05,013 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:40:05,017 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:40:05,053 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:05,058 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:05,156 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:05,174 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:05,205 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:05,228 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:05,253 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:09,968 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:09,972 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:09,973 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:09,975 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:09,978 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:09,980 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:09,981 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:09,981 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:09,982 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:09,982 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:09,983 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:09,984 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:09,984 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:09,985 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:09,985 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:09,986 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:10,035 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:10,036 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:10,036 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:10,037 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:10,037 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:10,038 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:10,040 - src.application.usecases - INFO - 投手名 'Shohei Ohtani' で検索します
+2025-03-29 02:40:10,040 - src.infrastructure.baseball_savant_client - INFO - 投手名 'Shohei Ohtani' で検索しています
+2025-03-29 02:40:10,041 - src.infrastructure.mlb_stats_client - INFO - MLBチームリストをAPI経由で取得
+2025-03-29 02:40:10,535 - src.infrastructure.mlb_stats_client - INFO - 30チームのデータを検索します
+2025-03-29 02:40:10,537 - src.infrastructure.mlb_stats_client - INFO - チームID 133 のロスターをAPI経由で取得
+2025-03-29 02:40:10,717 - src.infrastructure.mlb_stats_client - INFO - チームID 134 のロスターをAPI経由で取得
+2025-03-29 02:40:10,836 - src.infrastructure.mlb_stats_client - INFO - チームID 135 のロスターをAPI経由で取得
+2025-03-29 02:40:10,955 - src.infrastructure.mlb_stats_client - INFO - チームID 136 のロスターをAPI経由で取得
+2025-03-29 02:40:11,070 - src.infrastructure.mlb_stats_client - INFO - チームID 137 のロスターをAPI経由で取得
+2025-03-29 02:40:11,192 - src.infrastructure.mlb_stats_client - INFO - チームID 138 のロスターをAPI経由で取得
+2025-03-29 02:40:11,313 - src.infrastructure.mlb_stats_client - INFO - チームID 139 のロスターをAPI経由で取得
+2025-03-29 02:40:11,489 - src.infrastructure.mlb_stats_client - INFO - チームID 140 のロスターをAPI経由で取得
+2025-03-29 02:40:11,690 - src.infrastructure.mlb_stats_client - INFO - チームID 141 のロスターをAPI経由で取得
+2025-03-29 02:40:11,810 - src.infrastructure.mlb_stats_client - INFO - チームID 142 のロスターをAPI経由で取得
+2025-03-29 02:40:11,928 - src.infrastructure.mlb_stats_client - INFO - チームID 143 のロスターをAPI経由で取得
+2025-03-29 02:40:12,106 - src.infrastructure.mlb_stats_client - INFO - チームID 144 のロスターをAPI経由で取得
+2025-03-29 02:40:12,229 - src.infrastructure.mlb_stats_client - INFO - チームID 145 のロスターをAPI経由で取得
+2025-03-29 02:40:12,348 - src.infrastructure.mlb_stats_client - INFO - チームID 146 のロスターをAPI経由で取得
+2025-03-29 02:40:12,470 - src.infrastructure.mlb_stats_client - INFO - チームID 147 のロスターをAPI経由で取得
+2025-03-29 02:40:12,633 - src.infrastructure.mlb_stats_client - INFO - チームID 158 のロスターをAPI経由で取得
+2025-03-29 02:40:12,755 - src.infrastructure.mlb_stats_client - INFO - チームID 108 のロスターをAPI経由で取得
+2025-03-29 02:40:12,875 - src.infrastructure.mlb_stats_client - INFO - チームID 109 のロスターをAPI経由で取得
+2025-03-29 02:40:12,995 - src.infrastructure.mlb_stats_client - INFO - チームID 110 のロスターをAPI経由で取得
+2025-03-29 02:40:13,157 - src.infrastructure.mlb_stats_client - INFO - チームID 111 のロスターをAPI経由で取得
+2025-03-29 02:40:13,276 - src.infrastructure.mlb_stats_client - INFO - チームID 112 のロスターをAPI経由で取得
+2025-03-29 02:40:13,395 - src.infrastructure.mlb_stats_client - INFO - チームID 113 のロスターをAPI経由で取得
+2025-03-29 02:40:13,519 - src.infrastructure.mlb_stats_client - INFO - チームID 114 のロスターをAPI経由で取得
+2025-03-29 02:40:13,683 - src.infrastructure.mlb_stats_client - INFO - チームID 115 のロスターをAPI経由で取得
+2025-03-29 02:40:13,801 - src.infrastructure.mlb_stats_client - INFO - チームID 116 のロスターをAPI経由で取得
+2025-03-29 02:40:13,920 - src.infrastructure.mlb_stats_client - INFO - チームID 117 のロスターをAPI経由で取得
+2025-03-29 02:40:14,037 - src.infrastructure.mlb_stats_client - INFO - チームID 118 のロスターをAPI経由で取得
+2025-03-29 02:40:14,203 - src.infrastructure.mlb_stats_client - INFO - チームID 119 のロスターをAPI経由で取得
+2025-03-29 02:40:14,323 - src.infrastructure.mlb_stats_client - INFO - チームID 120 のロスターをAPI経由で取得
+2025-03-29 02:40:14,442 - src.infrastructure.mlb_stats_client - INFO - チームID 121 のロスターをAPI経由で取得
+2025-03-29 02:40:14,561 - src.infrastructure.mlb_stats_client - INFO - 'Shohei Ohtani'の検索結果: 1件
+2025-03-29 02:40:14,787 - src.infrastructure.baseball_savant_client - INFO - 1人の投手が見つかりました
+2025-03-29 02:40:14,804 - src.infrastructure.data_repository - INFO - 投手情報を保存しました: Shohei Ohtani (ID: 660271)
+2025-03-29 02:40:14,818 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:40:14,822 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:40:14,829 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:40:14,861 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:14,866 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:14,955 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:14,974 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:15,003 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:15,030 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:15,058 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:16,965 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:16,969 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:16,969 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:16,970 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:16,973 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:16,974 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:16,974 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:16,974 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:16,975 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:16,975 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:16,976 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:16,981 - src.application.usecases - INFO - 投手ID 660271 の2025シーズンの試合を取得します
+2025-03-29 02:40:16,985 - src.infrastructure.data_repository - INFO - 投手ID 660271 の23試合分の情報を取得しました
+2025-03-29 02:40:16,985 - src.application.usecases - INFO - キャッシュ不十分: APIから試合データを取得します
+2025-03-29 02:40:16,986 - src.infrastructure.baseball_savant_client - INFO - 投手ID 660271の2025シーズンの試合リストを取得します
+2025-03-29 02:40:16,986 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 660271, 2025シーズン全体
+2025-03-29 02:40:18,577 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 660271 - データが見つかりませんでした
+2025-03-29 02:40:18,578 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 660271の2025シーズンデータが取得できませんでした
+2025-03-29 02:40:18,582 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:40:18,586 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:40:18,589 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:40:18,610 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:18,613 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:18,681 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:18,700 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:18,725 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:18,744 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:18,764 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:22,210 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:22,213 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:22,214 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:22,215 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:22,218 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:22,219 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:22,219 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:22,219 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:22,220 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:22,220 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:22,220 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:22,226 - src.application.usecases - INFO - 投手ID 684007 の2024-08-30の試合を分析します
+2025-03-29 02:40:22,230 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shota Imanaga (ID: 684007)
+2025-03-29 02:40:22,232 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_684007_2024-08-30.pkl
+2025-03-29 02:40:22,255 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:22,259 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:22,327 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:22,344 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:22,370 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:22,388 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:22,407 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:23,316 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:23,319 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:23,320 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:23,321 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:23,324 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:23,325 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:23,325 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:23,326 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:23,326 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:23,327 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:23,327 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:23,333 - src.application.usecases - INFO - 投手ID 660271 の2023シーズンの試合を取得します
+2025-03-29 02:40:23,337 - src.infrastructure.data_repository - INFO - 投手ID 660271 の23試合分の情報を取得しました
+2025-03-29 02:40:23,337 - src.application.usecases - INFO - キャッシュから23試合分のデータを取得しました
+2025-03-29 02:40:23,341 - src.application.usecases - INFO - 投手ID 660271 の2024-08-30の試合を分析します
+2025-03-29 02:40:23,344 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-29 02:40:23,345 - src.application.usecases - INFO - キャッシュにデータがないため、APIから取得します
+2025-03-29 02:40:23,345 - src.infrastructure.baseball_savant_client - INFO - Baseball Savantからデータ取得: 投手ID 660271, 試合日 2024-08-30
+2025-03-29 02:40:24,608 - src.infrastructure.baseball_savant_client - WARNING - 投手ID 660271 - データが見つかりませんでした
+2025-03-29 02:40:24,611 - src.application.usecases - ERROR - 投手ID 660271 の2024-08-30の試合データが取得できませんでした
+2025-03-29 02:40:26,256 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:26,258 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:26,259 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:26,260 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:26,263 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:26,263 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:26,264 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:26,265 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:26,265 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:26,266 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:26,266 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:26,274 - src.application.usecases - INFO - 投手ID 660271 の2023-08-23の試合を分析します
+2025-03-29 02:40:26,278 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-29 02:40:26,282 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-08-23.pkl
+2025-03-29 02:40:26,304 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:26,308 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:26,374 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:26,396 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:26,421 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:26,440 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:26,459 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:28,838 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:28,840 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:28,841 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:28,842 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:28,846 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:28,846 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:28,847 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:28,848 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:28,848 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:28,849 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:28,849 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:28,855 - src.application.usecases - INFO - 投手ID 660271 の2023-08-23の試合を分析します
+2025-03-29 02:40:28,859 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-29 02:40:28,863 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-08-23.pkl
+2025-03-29 02:40:28,886 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:28,893 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:28,969 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:28,987 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:29,012 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:29,030 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:29,051 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）
+2025-03-29 02:40:29,500 - __main__ - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:29,502 - src.service_factory - INFO - サービスファクトリを初期化しています
+2025-03-29 02:40:29,502 - src.service_factory - INFO - Streamlitアプリケーションを作成しています
+2025-03-29 02:40:29,503 - src.service_factory - INFO - BaseballSavantClientを作成しました
+2025-03-29 02:40:29,506 - src.infrastructure.data_repository - INFO - データベーススキーマを初期化しました
+2025-03-29 02:40:29,507 - src.service_factory - INFO - DataRepositoryを作成しました (cache_dir: /app/data, db_path: /app/data/db.sqlite)
+2025-03-29 02:40:29,507 - src.service_factory - INFO - PitchAnalyzerを作成しました
+2025-03-29 02:40:29,508 - src.service_factory - INFO - PitcherGameAnalysisUseCaseを作成しました
+2025-03-29 02:40:29,508 - src.service_factory - INFO - PlotlyVisualizerを作成しました
+2025-03-29 02:40:29,509 - src.service_factory - INFO - Plotlyベースのアプリケーションを作成しました
+2025-03-29 02:40:29,509 - src.presentation.plotly_streamlit_app - INFO - Plotlyベースのアプリケーションを起動します
+2025-03-29 02:40:29,515 - src.application.usecases - INFO - 投手ID 660271 の2023-07-14の試合を分析します
+2025-03-29 02:40:29,519 - src.infrastructure.data_repository - INFO - 投手情報を取得しました: Shohei Ohtani (ID: 660271)
+2025-03-29 02:40:29,524 - src.infrastructure.data_repository - INFO - キャッシュからデータを読み込みました: /app/data/pitch_data_660271_2023-07-14.pkl
+2025-03-29 02:40:29,545 - src.application.usecases - INFO - 分析が正常に完了しました
+2025-03-29 02:40:29,548 - src.presentation.plotly_visualizer - INFO - パフォーマンスサマリーグラフを作成（Plotly）
+2025-03-29 02:40:29,616 - src.presentation.plotly_visualizer - INFO - 球種別分布グラフを作成（Plotly）
+2025-03-29 02:40:29,634 - src.presentation.plotly_visualizer - INFO - イニング別球速グラフを作成（Plotly）
+2025-03-29 02:40:29,660 - src.presentation.plotly_visualizer - INFO - イニング別投球分布グラフを作成（Plotly）
+2025-03-29 02:40:29,678 - src.presentation.plotly_visualizer - INFO - 球種別有効性グラフを作成（Plotly）
+2025-03-29 02:40:29,700 - src.presentation.plotly_visualizer - INFO - 被打球分布グラフを作成（Plotly）

@@ -10,6 +10,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from typing import Dict, List, Any, Optional, Tuple
 
+# 球種の日本語名マッピング - すでに変換済みのデータを使用するため冗長だが保険として残す
+from src.domain.pitch_utils import PITCH_TYPE_MAPPING, get_pitch_name_ja
+
 
 class PlotlyVisualizer:
     """Plotlyを使用したデータの可視化を担当するクラス"""

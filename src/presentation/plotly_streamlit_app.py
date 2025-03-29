@@ -116,9 +116,11 @@ class PlotlyStreamlitApp:
                         if result.error:
                             st.error(f"分析エラー: {result.error}")
                         else:
-                            # 分析結果表示
-                            st.header(f"{result.pitcher_name} - {result.game_date}の投球分析")
+                            # 球種名が確実に日本語になるよう変換を実行
+                            result.ensure_pitch_types_translated()
                             
+                            # 分析結果表示
+                            st.header(f"{result.pitcher_name} - {result.game_date}の投球分析")                            
                             # タブで結果表示
                             tab1, tab2, tab3, tab4 = st.tabs(["概要", "イニング分析", "球種分析", "被打球分析"])
                             

@@ -7,10 +7,10 @@ from typing import List, Dict, Any, Optional
 
 from src.domain.entities import Pitcher, Game
 from src.domain.pitch_analyzer import PitchAnalyzer
+from src.domain.pitch_utils import translate_pitch_types_in_data, translate_pitch_types_in_dataframe
 from src.infrastructure.baseball_savant_client import BaseballSavantClient
 from src.infrastructure.data_repository import DataRepository
 from src.application.analysis_result import AnalysisResult
-
 
 class PitcherGameAnalysisUseCase:
     """
