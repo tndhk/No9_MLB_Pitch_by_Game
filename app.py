@@ -17,7 +17,8 @@ def get_config() -> Dict[str, Any]:
         'cache_dir': os.environ.get('CACHE_DIR', './data'),
         'db_path': os.environ.get('DB_PATH', './data/db.sqlite'),
         'api_rate_limit': float(os.environ.get('API_RATE_LIMIT', '2.0')),
-        'log_dir': os.environ.get('LOG_DIR', 'logs')
+        'log_dir': os.environ.get('LOG_DIR', 'logs'),
+        'use_plotly': os.environ.get('USE_PLOTLY', 'True').lower() == 'true'  # 環境変数で切り替え可能
     }
     
     return config
@@ -41,7 +42,12 @@ def main() -> None:
         )
         
         logger = logging.getLogger(__name__)
-        logger.info("Streamlitアプリケーションを起動します")
+        
+        # Plotlyを使用するかのログ
+        if config['use_plotly']:
+            logger.info("Plotlyベースのアプリケーションを起動します")
+        else:
+            logger.info("Matplotlibベースのアプリケーションを起動します")
         
         # サービスファクトリの初期化
         factory = ServiceFactory(config)

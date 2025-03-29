@@ -471,18 +471,17 @@ class DataVisualizer:
         
         # 1. 球種分布パイチャート
         if 'pitch_type_counts' in performance_summary and performance_summary['pitch_type_counts']:
-            pitch_types = list(performance_summary['pitch_type_counts'].keys())
-            counts = list(performance_summary['pitch_type_counts'].values())
+            pitch_types = performance_summary['pitch_type_counts']
             
             # 使用頻度が少ない球種をまとめる（5%未満を「その他」に）
-            total = sum(counts)
+            total = sum(pitch_types.values())
             threshold = total * 0.05
             
             other_count = 0
             filtered_types = []
             filtered_counts = []
             
-            for pt, cnt in zip(pitch_types, counts):
+            for pt, cnt in pitch_types.items():
                 if cnt >= threshold:
                     filtered_types.append(pt)
                     filtered_counts.append(cnt)

@@ -1,5 +1,5 @@
 """
-シンプルな代替アプローチ：完全に書き直したStreamlitアプリ
+Plotlyを使用したシンプルなStreamlitアプリ
 """
 import streamlit as st
 import pandas as pd
@@ -9,23 +9,23 @@ from typing import Dict, Any, List, Optional
 
 from src.domain.entities import Pitcher, Game
 from src.application.usecases import PitcherGameAnalysisUseCase
-from src.presentation.data_visualizer import DataVisualizer
+from src.presentation.plotly_visualizer import PlotlyVisualizer
 
-class StreamlitApp:
-    """簡素化されたStreamlitアプリケーションクラス"""
+class PlotlyStreamlitApp:
+    """PlotlyベースのStreamlitアプリケーションクラス"""
     
-    def __init__(self, use_case: PitcherGameAnalysisUseCase, visualizer: DataVisualizer):
+    def __init__(self, use_case: PitcherGameAnalysisUseCase, visualizer: PlotlyVisualizer):
         self.use_case = use_case
         self.visualizer = visualizer
         self.logger = logging.getLogger(__name__)
     
     def run(self):
         """アプリケーションの実行"""
-        self.logger.info("シンプルなアプリケーションを起動します")
+        self.logger.info("Plotlyベースのアプリケーションを起動します")
         
         # アプリケーションの設定
         st.set_page_config(
-            page_title="MLB投手分析ツール (シンプル版)",
+            page_title="MLB投手分析ツール (Plotly版)",
             page_icon="⚾",
             layout="wide"
         )
@@ -157,7 +157,7 @@ class StreamlitApp:
                 
                 # パフォーマンスサマリーグラフ
                 summary_fig = self.visualizer.create_performance_summary_chart(result.performance_summary)
-                st.pyplot(summary_fig)
+                st.plotly_chart(summary_fig, use_container_width=True)
             
             with col2:
                 st.subheader("球種分布")
@@ -165,7 +165,7 @@ class StreamlitApp:
                 if result.pitch_type_analysis and 'usage' in result.pitch_type_analysis:
                     # 球種使用率グラフ
                     pitch_type_fig = self.visualizer.create_pitch_type_chart(result.pitch_type_analysis)
-                    st.pyplot(pitch_type_fig)
+                    st.plotly_chart(pitch_type_fig, use_container_width=True)
                 else:
                     st.info("球種分析データがありません")
         else:
@@ -186,13 +186,13 @@ class StreamlitApp:
         with col1:
             st.markdown("#### 球速推移")
             velocity_fig = self.visualizer.create_velocity_chart(inning_analysis)
-            st.pyplot(velocity_fig)
+            st.plotly_chart(velocity_fig, use_container_width=True)
         
         # 投球数グラフ
         with col2:
             st.markdown("#### 投球数")
             pitch_count_fig = self.visualizer.create_pitch_distribution_chart(inning_analysis)
-            st.pyplot(pitch_count_fig)
+            st.plotly_chart(pitch_count_fig, use_container_width=True)
     
     def _render_pitch_type_analysis(self, pitch_type_analysis):
         """球種分析タブの表示"""
@@ -209,7 +209,7 @@ class StreamlitApp:
         # 球種効果グラフ
         st.markdown("#### 球種効果")
         effectiveness_fig = self.visualizer.create_pitch_effectiveness_chart(pitch_type_analysis)
-        st.pyplot(effectiveness_fig)
+        st.plotly_chart(effectiveness_fig, use_container_width=True)
     
     def _render_batted_ball_analysis(self, batted_ball_analysis):
         """被打球分析タブの表示"""
@@ -222,4 +222,4 @@ class StreamlitApp:
         # 被打球分布図
         st.markdown("#### 被打球分布")
         batted_ball_fig = self.visualizer.create_batted_ball_chart(batted_ball_analysis)
-        st.pyplot(batted_ball_fig)
+        st.plotly_chart(batted_ball_fig, use_container_width=True)

@@ -10,8 +10,10 @@ from src.infrastructure.baseball_savant_client import BaseballSavantClient
 from src.infrastructure.data_repository import DataRepository
 from src.domain.pitch_analyzer import PitchAnalyzer
 from src.presentation.data_visualizer import DataVisualizer
+from src.presentation.plotly_visualizer import PlotlyVisualizer
 from src.application.usecases import PitcherGameAnalysisUseCase
 from src.presentation.streamlit_app import StreamlitApp
+from src.presentation.plotly_streamlit_app import PlotlyStreamlitApp
 from src.config import get_config
 
 
@@ -35,6 +37,9 @@ class ServiceFactory:
         
         # 内部でインスタンスをキャッシュ
         self._instances = {}
+        
+        # 設定からビジュアライザーの種類を判断
+        self.use_plotly = self.config.get('use_plotly', True)  # デフォルトでPlotlyを使用
     
     def _setup_logging(self) -> None:
         """ロギングの設定"""
@@ -94,6 +99,14 @@ class ServiceFactory:
         
         return self._instances['data_visualizer']
     
+    def create_plotly_visualizer(self) -> PlotlyVisualizer:
+        """PlotlyVisualizerのインスタンスを作成/取得"""
+        if 'plotly_visualizer' not in self._instances:
+            self._instances['plotly_visualizer'] = PlotlyVisualizer()
+            self.logger.info("PlotlyVisualizerを作成しました")
+        
+        return self._instances['plotly_visualizer']
+    
     def create_pitcher_game_analysis_use_case(self) -> PitcherGameAnalysisUseCase:
         """PitcherGameAnalysisUseCaseのインスタンスを作成/取得"""
         if 'pitcher_game_analysis_use_case' not in self._instances:
@@ -123,9 +136,16 @@ class ServiceFactory:
         
         # 必要なコンポーネントを取得
         use_case = self.create_pitcher_game_analysis_use_case()
-        visualizer = self.create_data_visualizer()
         
-        # アプリケーションのインスタンスを作成
-        app = StreamlitApp(use_case, visualizer)
-        self.logger.info("Streamlitアプリケーションの作成が完了しました")
+        if self.use_plotly:
+            # Plotlyベースのアプリを作成
+            visualizer = self.create_plotly_visualizer()
+            app = PlotlyStreamlitApp(use_case, visualizer)
+            self.logger.info("Plotlyベースのアプリケーションを作成しました")
+        else:
+            # Matplotlibベースのアプリを作成
+            visualizer = self.create_data_visualizer()
+            app = StreamlitApp(use_case, visualizer)
+            self.logger.info("Matplotlibベースのアプリケーションを作成しました")
+        
         return app
